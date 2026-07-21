@@ -1,653 +1,905 @@
 <!DOCTYPE html>
-<html lang="vi" data-theme="light">
+<html lang="vi">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Đánh Thức Vẻ Rạng Rỡ Tự Nhiên — Workshop cùng Kim Anh Amala</title>
-<meta name="description" content="Workshop 3 buổi online cùng Kim Anh Amala: khám phá 7 nguồn năng lượng đang âm thầm rút cạn sinh lực và thiết kế trạm sạc năng lượng cá nhân cho riêng bạn.">
+<title>Đánh Thức Vẻ Rạng Rỡ Tự Nhiên | Kim Anh Amala</title>
+<meta name="description" content="Workshop 3 buổi giúp bạn nhận diện nguồn năng lượng rò rỉ và thiết kế trạm sạc cá nhân để nuôi dưỡng sự rạng rỡ từ bên trong.">
+<meta name="keywords" content="Kim Anh Amala, workshop năng lượng, chăm sóc bản thân, rạng rỡ tự nhiên, trạm sạc năng lượng">
+<meta name="theme-color" content="#edf4f1">
 
-<!-- Open Graph -->
-<meta property="og:title" content="Đánh Thức Vẻ Rạng Rỡ Tự Nhiên — Workshop cùng Kim Anh Amala">
-<meta property="og:description" content="Từ quên mình đến rạng rỡ tự nhiên nhờ trạm sạc năng lượng cá nhân. 3 buổi online qua Zoom, 20:00 - 21:30, 29-31/7/2026.">
-<meta property="og:image" content="assets/og-image.jpg">
+<meta property="og:title" content="Đánh Thức Vẻ Rạng Rỡ Tự Nhiên">
+<meta property="og:description" content="3 buổi cùng Kim Anh Amala để hiểu đúng nguồn năng lượng đang rút cạn bạn và bắt đầu nuôi dưỡng lại từ bên trong.">
+<meta property="og:image" content="assets/og.jpg">
+<meta property="og:locale" content="vi_VN">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Đánh Thức Vẻ Rạng Rỡ Tự Nhiên">
+<meta name="twitter:description" content="Workshop 3 buổi cùng Kim Anh Amala · 29–31/7/2026.">
+<meta name="twitter:image" content="assets/og.jpg">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;650;700&family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
 
 <style>
 :root {
-  --bg: #FFFDF6;
-  --surface: #FFF3D6;
-  --surface-2: #FFE7AF;
-  --text: #3A2610;
-  --text-muted: #8C6A38;
-  --accent: #C6790A;
-  --accent-soft: rgba(198, 121, 10, 0.20);
-  --accent-deep: #8A4F04;
-  --accent-bright: #F0A93A;
-  --border: rgba(198, 121, 10, 0.32);
-
-  --font-h: 'Lora', serif;
-  --font-b: 'Inter', system-ui, sans-serif;
-
-  --max-w: 1100px;
-  --max-w-narrow: 760px;
-  --section-py: clamp(56px, 9vw, 112px);
-  --radius: 14px;
+  --ink: #183b3b;
+  --deep: #234747;
+  --forest: #37685f;
+  --sage: #6f9c8f;
+  --sage-light: #b8d1ca;
+  --mist: #edf4f1;
+  --cream: #f7f3ee;
+  --paper: #fffdf9;
+  --pink: #e9b2b8;
+  --pink-light: #f4d8d8;
+  --line: rgba(24, 59, 59, 0.14);
+  --font-geist-sans: 'Plus Jakarta Sans', Arial, sans-serif;
 }
 
-* { box-sizing: border-box; margin: 0; padding: 0; }
+* { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
 body {
-  font-family: var(--font-b); background: var(--bg); color: var(--text);
-  line-height: 1.7; -webkit-font-smoothing: antialiased;
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-geist-sans), Arial, sans-serif;
+  line-height: 1.55;
+  overflow-x: hidden;
 }
-img { max-width: 100%; display: block; }
+body, a, button, summary { -webkit-font-smoothing: antialiased; }
 a { color: inherit; text-decoration: none; }
-button { font-family: inherit; cursor: pointer; border: none; background: none; color: inherit; }
-h1, h2, h3, h4 { font-family: var(--font-h); line-height: 1.25; font-weight: 700; color: var(--text); }
-h1 { font-size: clamp(2rem, 5.5vw, 3.75rem); letter-spacing: -0.01em; }
-h2 { font-size: clamp(1.65rem, 3.8vw, 2.6rem); letter-spacing: -0.01em; }
-h3 { font-size: clamp(1.2rem, 2.4vw, 1.5rem); }
-p { color: var(--text-muted); }
+p, h1, h2, h3, blockquote { margin-top: 0; }
+img { max-width: 100%; display: block; }
 
-.container { max-width: var(--max-w); margin: 0 auto; padding: 0 24px; }
-.container-narrow { max-width: var(--max-w-narrow); margin: 0 auto; padding: 0 24px; }
-.section { padding: var(--section-py) 0; position: relative; }
-.section-alt { background: var(--surface); }
-
-.eyebrow {
-  display: inline-block; font-family: var(--font-h); font-size: 0.85rem;
-  letter-spacing: 0.18em; text-transform: uppercase; color: var(--accent);
-  font-weight: 600; margin-bottom: 18px;
+.site-header {
+  align-items: center; display: flex; height: 82px; justify-content: space-between;
+  left: 50%; max-width: 1280px; padding: 0 32px; position: absolute; top: 0;
+  transform: translateX(-50%); width: 100%; z-index: 20;
 }
-.eyebrow::before { content: "✦  "; }
-
-.badge {
-  display: inline-block; padding: 8px 18px; border-radius: 999px;
-  background: linear-gradient(135deg, var(--accent) 0%, var(--accent-deep) 100%);
-  color: #FFFCF2;
-  font-size: 0.875rem; font-weight: 700; letter-spacing: 0.02em;
-  border: 1px solid var(--accent-deep);
-  box-shadow: 0 4px 14px var(--accent-soft);
+.brand { align-items: center; display: inline-flex; gap: 11px; }
+.brand > span:last-child { display: flex; flex-direction: column; line-height: 1.15; }
+.brand strong { font-size: 13px; letter-spacing: 0.09em; text-transform: uppercase; }
+.brand small { font-size: 9px; letter-spacing: 0.07em; margin-top: 4px; }
+.brand-mark {
+  align-items: flex-end; background: var(--sage); border-radius: 10px; display: inline-flex;
+  height: 38px; justify-content: center; overflow: hidden; padding: 9px; position: relative; width: 38px;
 }
-.btn-primary {
-  display: inline-block; padding: 18px 36px;
-  background: linear-gradient(135deg, var(--accent) 0%, var(--accent-deep) 100%);
-  color: #FFFCF2; border-radius: var(--radius);
-  font-weight: 700; font-size: 1.05rem; font-family: var(--font-h);
-  transition: all 0.2s; box-shadow: 0 4px 16px var(--accent-soft);
+.brand-mark i {
+  background: #edf4f1; border-radius: 100% 0 100% 0; display: block; height: 14px;
+  position: absolute; transform-origin: 100% 100%; width: 8px;
 }
-.btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 28px var(--accent-soft); }
-.btn-secondary {
-  display: inline-block; padding: 16px 32px;
-  background: transparent; color: var(--text);
-  border: 1px solid var(--border); border-radius: var(--radius); font-weight: 600;
+.brand-mark i:nth-child(1) { transform: translate(-6px, -1px) rotate(-30deg); }
+.brand-mark i:nth-child(2) { height: 17px; transform: translateY(-2px) rotate(8deg); }
+.brand-mark i:nth-child(3) { transform: translate(6px, -1px) rotate(48deg); }
+.site-header nav { display: flex; gap: 28px; }
+.site-header nav a { font-size: 12px; font-weight: 550; position: relative; }
+.site-header nav a::after {
+  background: var(--forest); bottom: -5px; content: ""; height: 1px; left: 0; position: absolute;
+  transform: scaleX(0); transform-origin: left; transition: transform 180ms ease; width: 100%;
+}
+.site-header nav a:hover::after { transform: scaleX(1); }
+.header-cta {
+  align-items: center; background: var(--deep); border-radius: 999px; color: white; display: inline-flex;
+  font-size: 12px; font-weight: 650; gap: 14px; padding: 11px 17px;
 }
 
-.grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(360px, 1fr)); gap: 24px; }
-.grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; }
-.grid-4 { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; }
-
-.text-center { text-align: center; }
-.text-accent { color: var(--accent); }
-.text-muted { color: var(--text-muted); }
-.mt-2 { margin-top: 8px; } .mt-4 { margin-top: 16px; } .mt-6 { margin-top: 24px; }
-.mt-8 { margin-top: 32px; } .mt-12 { margin-top: 48px; } .mt-16 { margin-top: 64px; }
-
-/* Hero */
 .hero {
-  padding: clamp(80px, 12vw, 140px) 0 var(--section-py);
-  background: radial-gradient(ellipse at top, var(--accent-soft) 0%, var(--bg) 55%);
+  background: radial-gradient(circle at 16% 24%, rgba(255,255,255,.88), transparent 28%),
+    linear-gradient(135deg, #f3eee9 0%, #dae8e6 52%, #afc7c6 100%);
+  min-height: 825px; overflow: hidden; padding: 130px 24px 74px; position: relative;
 }
-.hero-meta { display: flex; flex-wrap: wrap; gap: 10px 20px; justify-content: center; margin-bottom: 20px; color: var(--text-muted); font-size: 0.9rem; }
-.hero-meta span::before { content: "· "; }
-.hero-meta span:first-child::before { content: ""; }
+.hero::after {
+  background: linear-gradient(to top, rgba(245,247,244,.88), transparent); bottom: 0; content: "";
+  height: 230px; left: 0; pointer-events: none; position: absolute; width: 100%;
+}
+.hero-inner {
+  align-items: center; display: grid; gap: 56px; grid-template-columns: 1.08fr 0.92fr;
+  margin: 0 auto; max-width: 1180px; min-height: 610px; position: relative; z-index: 5;
+}
+.hero-copy { max-width: 660px; }
+.eyebrow, .kicker {
+  align-items: center; color: var(--forest); display: flex; font-size: 11px; font-weight: 700;
+  gap: 10px; letter-spacing: 0.16em; margin-bottom: 22px; text-transform: uppercase;
+}
+.eyebrow::before, .kicker::before { background: var(--pink); border-radius: 50%; content: ""; height: 7px; width: 7px; }
+.hero h1, .section-heading h2, .story-copy h2, .manifesto h2, .results-intro h2,
+.audience-card h2, .offer h2, .faq h2, .closing h2 {
+  font-family: 'Lora', "Times New Roman", serif; font-weight: 500; letter-spacing: -0.02em;
+}
+.hero h1 { font-size: clamp(4rem, 6.2vw, 6.15rem); line-height: 0.9; margin-bottom: 30px; max-width: 720px; }
+em { color: var(--sage); font-weight: 400; }
+.hero h1 em { display: inline; font-size: 0.85em; font-style: italic; }
+.hero-lead { font-size: 17px; line-height: 1.65; margin-bottom: 29px; max-width: 570px; }
+.event-strip { border-bottom: 1px solid var(--line); border-top: 1px solid var(--line); display: flex; margin-bottom: 27px; padding: 16px 0; }
+.event-strip span { border-right: 1px solid var(--line); display: flex; flex: 1; flex-direction: column; font-size: 13px; font-weight: 650; padding: 0 20px; }
+.event-strip span:first-child { padding-left: 0; }
+.event-strip span:last-child { border: 0; }
+.event-strip small { color: #607776; font-size: 9px; font-weight: 600; letter-spacing: 0.11em; margin-bottom: 3px; text-transform: uppercase; }
+.hero-actions { align-items: center; display: flex; gap: 23px; margin-bottom: 20px; }
+.button {
+  align-items: center; background: var(--deep); border: 1px solid var(--deep); border-radius: 999px;
+  color: white; display: inline-flex; font-size: 13px; font-weight: 700; gap: 27px;
+  justify-content: space-between; min-height: 54px; padding: 0 21px 0 24px;
+  transition: background 180ms ease, color 180ms ease, transform 180ms ease;
+}
+.button:hover { background: #143938; transform: translateY(-2px); }
+.button:focus-visible, .header-cta:focus-visible, a:focus-visible, summary:focus-visible {
+  outline: 3px solid rgba(233,178,184,.9); outline-offset: 3px;
+}
+.hero-actions > p { color: #506866; font-size: 11px; line-height: 1.5; margin: 0; }
+.hero-actions > p strong { color: var(--ink); font-size: 12px; }
+.scarcity { align-items: center; color: #4e6866; display: flex; font-size: 10px; gap: 8px; margin: 0; }
+.scarcity span, .spots span { background: #e08d98; border: 4px solid rgba(224,141,152,.2); background-clip: padding-box; border-radius: 50%; flex: 0 0 auto; height: 12px; width: 12px; }
+.hero-visual { height: 590px; position: relative; }
+.hero-photo-frame {
+  border: 8px solid rgba(255,255,255,.42); border-radius: 250px 250px 30px 30px;
+  box-shadow: 0 28px 80px rgba(28,60,58,.19); height: 590px; left: 0; overflow: hidden; position: absolute; top: 0; width: calc(100% - 26px);
+}
+.hero-photo-frame::after { background: linear-gradient(to top, rgba(24,59,59,.45), transparent 42%); content: ""; inset: 0; pointer-events: none; position: absolute; }
+.hero-photo-frame img { height: 100%; object-fit: cover; object-position: 50% 32%; width: 100%; }
+.energy-card {
+  backdrop-filter: blur(18px); background: rgba(249,248,244,.9); border: 1px solid rgba(255,255,255,.66);
+  border-radius: 20px; box-shadow: 0 24px 80px rgba(28,60,58,.2); padding: 18px; position: absolute;
+  right: -15px; top: 150px; width: 260px; z-index: 4;
+}
+.card-topline { align-items: center; display: flex; font-size: 10px; font-weight: 650; justify-content: space-between; letter-spacing: 0.08em; text-transform: uppercase; }
+.card-topline .brand-mark { background: transparent; height: 26px; padding: 5px; width: 26px; }
+.card-topline .brand-mark i { background: var(--sage); }
+.energy-card > p { font-family: 'Lora', serif; font-size: 13px; line-height: 1.5; margin: 14px 0; }
+.energy-meter { background: rgba(55,104,95,.11); border-radius: 99px; height: 5px; overflow: hidden; }
+.energy-meter span { background: linear-gradient(90deg, var(--sage), var(--pink)); border-radius: inherit; display: block; height: 100%; width: 72%; }
+.energy-card > small { color: #6a7d7b; display: block; font-size: 8px; letter-spacing: 0.08em; margin-top: 8px; text-align: left; text-transform: uppercase; }
+.floating-note {
+  align-items: center; backdrop-filter: blur(16px); background: rgba(34,72,70,.88); border: 1px solid rgba(255,255,255,.14);
+  border-radius: 18px; bottom: 1px; box-shadow: 0 20px 50px rgba(28,60,58,.24); color: white; display: flex;
+  gap: 12px; left: -18px; padding: 15px; position: absolute; width: 230px;
+}
+.floating-note p { font-family: 'Lora', serif; font-size: 13px; line-height: 1.25; margin: 0; }
+.floating-note small { color: #bcd3cc; display: block; font-family: var(--font-geist-sans); font-size: 7px; letter-spacing: 0.08em; margin-bottom: 3px; text-transform: uppercase; }
+.note-icon { align-items: center; background: var(--pink-light); border-radius: 12px; color: var(--deep); display: flex; flex: 0 0 40px; height: 40px; justify-content: center; }
+.mist { background: rgba(255,255,255,.45); border-radius: 50%; filter: blur(34px); position: absolute; }
+.mist-one { height: 210px; right: 3%; top: 15%; width: 390px; }
+.mist-two { bottom: 6%; height: 160px; left: 4%; width: 520px; }
+.mountain {
+  bottom: -160px; clip-path: polygon(0 100%, 0 72%, 13% 49%, 23% 65%, 39% 29%, 52% 65%, 68% 42%, 78% 67%, 91% 30%, 100% 61%, 100% 100%);
+  height: 490px; left: 0; position: absolute; width: 100%;
+}
+.mountain-back { background: rgba(88,126,121,.24); transform: translateY(-80px) scale(1.15); }
+.mountain-front { background: rgba(70,104,100,.22); transform: translate(15%, 15px) scale(1.2); }
+.hero-foot { bottom: 24px; display: flex; justify-content: space-between; left: 50%; max-width: 1000px; position: absolute; transform: translateX(-50%); width: calc(100% - 48px); z-index: 6; }
+.hero-foot span { align-items: center; color: rgba(24,59,59,.62); display: flex; font-family: 'Lora', serif; font-size: 12px; gap: 20px; }
+.hero-foot span:not(:last-child)::after { color: var(--sage); content: "✦"; font-size: 9px; }
 
-/* Founder story */
-.story-narrative p { font-size: 1.1rem; margin-bottom: 20px; color: var(--text); }
-.story-narrative p.muted { color: var(--text-muted); }
-.story-narrative .pull-quote {
-  font-family: var(--font-h); font-size: 1.25rem; color: var(--accent-deep);
-  border-left: 3px solid var(--accent); padding-left: 24px; margin: 32px 0;
-  font-style: italic; font-weight: 500;
-}
-.founder-portrait {
-  border-radius: 20px; width: 240px; aspect-ratio: 4 / 5; margin: 0 auto 32px;
-  background: radial-gradient(circle, var(--accent-soft) 0%, transparent 70%);
-  padding: 8px;
-}
-.founder-portrait .ph {
-  width: 100%; height: 100%; border-radius: 14px;
-  background: linear-gradient(135deg, var(--accent) 0%, var(--accent-deep) 100%);
-  border: 3px solid var(--accent);
-  display: flex; align-items: center; justify-content: center;
-  font-family: var(--font-h); font-size: 2.5rem; font-weight: 700; color: #FFFCF2;
-  box-shadow: 0 12px 48px var(--accent-soft);
-}
-.founder-portrait img {
-  width: 100%; height: 100%; border-radius: 14px; object-fit: cover; object-position: top center;
-  border: 3px solid var(--accent);
-  box-shadow: 0 12px 48px var(--accent-soft);
-}
-.founder-banner {
-  max-width: 480px; margin: 40px auto;
-  background: linear-gradient(135deg, var(--surface-2) 0%, var(--surface) 100%);
-  border: 1px solid var(--border); border-radius: var(--radius);
-  padding: 10px;
-}
-.founder-banner img {
-  border-radius: calc(var(--radius) - 6px); width: 100%;
-  aspect-ratio: 4 / 3; object-fit: cover; display: block;
-}
-.workshop-photo {
-  max-width: 260px; margin: 0 auto 32px; border-radius: var(--radius);
-  overflow: hidden; border: 1px solid var(--border);
-}
-.workshop-photo img { width: 100%; aspect-ratio: 3 / 4; object-fit: cover; display: block; }
+.section { margin: 0 auto; max-width: 1180px; padding: 118px 24px; }
+.section-heading h2, .story-copy h2, .manifesto h2, .results-intro h2, .offer h2, .faq h2, .closing h2 { font-size: clamp(2.85rem, 5vw, 4.6rem); line-height: 1.02; margin-bottom: 28px; }
+.centered { margin-left: auto; margin-right: auto; text-align: center; }
+.centered .kicker { justify-content: center; }
 
-/* Pain list */
-.pain-list { display: grid; gap: 16px; }
-.pain-item {
-  background: var(--surface-2); border-left: 3px solid var(--accent-deep);
-  padding: 20px 24px; border-radius: 8px; color: var(--text);
-}
-.belief-list { display: grid; gap: 12px; margin-top: 16px; }
-.belief-item {
-  font-style: italic; color: var(--text-muted); padding: 14px 20px;
-  background: var(--surface); border-radius: 8px; border: 1px dashed var(--border);
-}
+.problem-grid { display: grid; gap: 12px; grid-template-columns: repeat(4, 1fr); margin-top: 55px; }
+.problem-card { background: var(--mist); border: 1px solid transparent; border-radius: 22px; min-height: 220px; padding: 24px; transition: border-color 180ms ease, transform 180ms ease; }
+.problem-card:hover { border-color: var(--sage-light); transform: translateY(-5px); }
+.problem-card:nth-child(2), .problem-card:nth-child(4) { background: #f7eeee; }
+.problem-card > span { color: var(--sage); display: block; font-family: 'Lora', serif; font-size: 28px; margin-bottom: 54px; }
+.problem-card p { font-size: 15.5px; line-height: 1.55; margin: 0; }
 
-/* Curriculum */
-.session {
-  background: var(--surface-2); border: 1px solid var(--border);
-  border-radius: var(--radius); padding: 36px;
-}
-.session-num {
-  display: inline-flex; align-items: center; justify-content: center;
-  width: 56px; height: 56px; background: var(--accent); color: #FFFCF2;
-  border-radius: 50%; font-family: var(--font-h); font-weight: 800; font-size: 1.5rem;
-  margin-bottom: 20px;
-}
-.session-date { color: var(--accent-deep); font-weight: 600; font-family: var(--font-h); margin-bottom: 16px; }
+.beliefs { align-items: start; border-top: 1px solid var(--line); display: grid; gap: 60px; grid-template-columns: 0.8fr 1.2fr; margin-top: 90px; padding-top: 70px; }
+.beliefs h3 { font-family: 'Lora', serif; font-size: 34px; font-weight: 400; line-height: 1.1; }
+.belief-list { display: grid; gap: 10px; grid-template-columns: 1fr 1fr; }
+.belief-list p { background: var(--cream); border-radius: 15px; font-family: 'Lora', serif; font-size: 16px; margin: 0; padding: 17px 18px; }
+.belief-list p:last-child { background: var(--pink-light); grid-column: 1 / -1; }
 
-/* Result card */
-.result-card {
-  background: linear-gradient(135deg, var(--surface-2) 0%, var(--surface) 100%);
-  border: 1px solid var(--border); border-radius: var(--radius);
-  padding: 40px; text-align: center;
-}
+.story-section { align-items: center; background: var(--mist); display: grid; gap: 9vw; grid-template-columns: 0.9fr 1.1fr; padding: 120px max(24px, calc((100vw - 1180px) / 2)); }
+.portrait-wrap { text-align: center; }
+.portrait { background: linear-gradient(160deg, #d7e5df, #93b5a9); border-radius: 240px 240px 28px 28px; height: 570px; overflow: hidden; position: relative; }
+.portrait::after { background: linear-gradient(to top, rgba(24,59,59,.38), transparent 42%); content: ""; inset: 0; pointer-events: none; position: absolute; }
+.portrait img { height: 100%; object-fit: cover; object-position: 20% center; width: 100%; }
+.portrait-label { backdrop-filter: blur(10px); background: rgba(255,253,249,.8); border-radius: 999px; bottom: 22px; color: var(--deep); font-size: 8px; font-weight: 700; left: 50%; letter-spacing: 0.11em; padding: 10px 15px; position: absolute; text-transform: uppercase; transform: translateX(-50%); white-space: nowrap; z-index: 2; }
+.signature { font-family: 'Lora', serif; font-size: 25px; font-style: italic; margin: 20px 0 0; }
+.portrait-wrap > span { color: #617a75; font-size: 9px; letter-spacing: .13em; text-transform: uppercase; }
+.story-copy > p:not(.kicker) { color: #415e5b; font-size: 15.5px; line-height: 1.8; }
+.story-copy blockquote { border-left: 2px solid var(--pink); color: var(--deep); font-family: 'Lora', serif; font-size: 24px; font-style: italic; line-height: 1.45; margin: 34px 0; padding-left: 27px; }
+.story-copy .button { margin-top: 18px; }
 
-/* Audience */
-.audience-list { display: grid; gap: 14px; }
-.audience-item {
-  background: var(--surface-2); padding: 18px 24px 18px 56px; border-radius: 8px;
-  position: relative; color: var(--text); border: 1px solid var(--border);
+.manifesto { align-items: center; background: var(--deep); color: white; display: grid; gap: 10vw; grid-template-columns: .8fr 1.2fr; padding: 120px max(24px, calc((100vw - 1080px) / 2)); }
+.manifesto .kicker, .sessions .kicker { color: #b9d4cc; }
+.manifesto-orb {
+  align-items: center; background: radial-gradient(circle at 33% 30%, rgba(255,255,255,.16), transparent 17%), linear-gradient(145deg, #e7c4c6, #78a398 62%, #416e66);
+  border: 12px solid rgba(255,255,255,.09); border-radius: 50%; display: flex; height: 360px; justify-content: center; overflow: visible; position: relative; width: 360px;
 }
-.audience-item::before {
-  content: "✓"; position: absolute; left: 20px; top: 18px;
-  width: 24px; height: 24px; background: var(--accent); color: #FFFCF2;
-  border-radius: 50%; display: flex; align-items: center; justify-content: center;
-  font-weight: 700; font-size: 0.85rem;
+.manifesto-orb::before { background: linear-gradient(to top, rgba(35,71,71,.42), transparent 48%); border-radius: 50%; content: ""; inset: 0; position: absolute; z-index: 1; }
+.manifesto-orb img { border-radius: 50%; clip-path: circle(46% at center); height: 100%; object-fit: cover; object-position: center; transform: scale(1.08); width: 100%; }
+.manifesto-orb::after { border: 1px solid rgba(255,255,255,.18); border-radius: 50%; content: ""; height: 430px; position: absolute; width: 430px; z-index: 2; }
+.manifesto-orb .brand-mark { background: rgba(255,255,255,.14); height: 86px; transform: scale(1.3); width: 86px; }
+.manifesto-portrait {
+  background: linear-gradient(160deg, #d7e5df, #93b5a9); border-radius: 240px 240px 28px 28px;
+  box-shadow: 0 24px 70px rgba(0,0,0,.28); height: 570px; overflow: hidden; position: relative;
 }
-.audience-item.no::before { content: "✕"; background: #A85C5C; }
+.manifesto-portrait::after { background: linear-gradient(to top, rgba(24,59,59,.38), transparent 42%); content: ""; inset: 0; pointer-events: none; position: absolute; }
+.manifesto-portrait img { height: 100%; object-fit: cover; object-position: center top; width: 100%; }
+@media (max-width: 760px) { .manifesto-portrait { height: 500px; margin: 0 auto; max-width: 430px; } }
+.manifesto h2 em, .sessions h2 em { color: var(--pink-light); }
+.manifesto .large-copy { color: white; font-family: 'Lora', serif; font-size: 22px; line-height: 1.55; }
+.manifesto p:not(.kicker):not(.large-copy) { color: #bfd0cd; font-size: 15.5px; line-height: 1.8; }
 
-/* Contrast (Trước/Sau) */
-.contrast-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
-@media (max-width: 700px) { .contrast-grid { grid-template-columns: 1fr; } }
-.contrast-col {
-  background: var(--surface-2); border: 1px solid var(--border);
-  border-radius: var(--radius); padding: 32px 28px;
-}
-.contrast-col h3 { margin-bottom: 20px; padding-bottom: 16px; border-bottom: 1px solid var(--border); text-align: center; }
-.contrast-col ul { list-style: none; padding: 0; }
-.contrast-col li { padding: 10px 0 10px 28px; position: relative; color: var(--text); }
-.contrast-no li::before { content: "✕"; position: absolute; left: 0; color: #A85C5C; font-weight: 700; }
-.contrast-yes li::before { content: "✓"; position: absolute; left: 0; color: var(--accent); font-weight: 700; }
-
-/* Testimonial */
-.testimonial-grid { display: grid; gap: 20px; }
-.testimonial-card {
-  background: var(--surface-2); border: 1px solid var(--border);
-  border-radius: var(--radius); padding: 28px;
-  display: grid; grid-template-columns: 120px 1fr; gap: 24px; align-items: start;
-}
-@media (max-width: 640px) { .testimonial-card { grid-template-columns: 1fr; text-align: center; } }
-.testimonial-card p { color: var(--text); }
-.testimonial-who { display: flex; flex-direction: column; align-items: center; text-align: center; }
-.avatar-placeholder {
-  width: 56px; height: 56px; border-radius: 50%;
-  background: linear-gradient(135deg, var(--accent) 0%, var(--accent-deep) 100%);
-  display: flex; align-items: center; justify-content: center;
-  font-family: var(--font-h); font-size: 1.3rem; font-weight: 700; color: #FFFCF2;
-  margin-bottom: 12px; border: 2px solid var(--accent);
-}
-.testimonial-name { font-family: var(--font-h); font-weight: 700; color: var(--text); }
-.testimonial-role { color: var(--accent-deep); font-size: 0.8rem; letter-spacing: 0.05em; text-transform: uppercase; margin-top: 2px; }
-.feedback-quote {
-  font-style: italic; padding: 16px 20px; background: var(--surface);
-  border-radius: 8px; border: 1px solid var(--border); color: var(--text);
-}
-
-/* Bonus */
-.bonus-card {
-  background: var(--surface-2); border: 1px solid var(--border); border-radius: var(--radius);
-  padding: 28px; text-align: center;
-}
-.bonus-card .icon { font-size: 2.2rem; margin-bottom: 12px; }
-
-/* Offer box */
-.offer-box {
-  background: linear-gradient(135deg, var(--surface-2) 0%, #FFDD8C 100%);
-  border: 2px solid var(--accent); border-radius: var(--radius);
-  padding: 56px 40px; text-align: center;
-  box-shadow: 0 20px 60px var(--accent-soft);
-}
-.offer-price { font-family: var(--font-h); margin: 24px 0 32px; }
-.offer-price .strike { color: var(--text-muted); text-decoration: line-through; font-size: 1.1rem; display: block; margin-bottom: 4px; }
-.offer-price .main { color: var(--accent-deep); font-size: 3rem; font-weight: 800; }
-.offer-list { text-align: left; max-width: 480px; margin: 32px auto; }
-.offer-list li { list-style: none; padding: 10px 0 10px 32px; position: relative; color: var(--text); }
-.offer-list li::before { content: "✦"; position: absolute; left: 0; color: var(--accent); font-weight: 700; }
-
-/* Guarantee */
-.guarantee-box {
-  border: 1px dashed var(--accent); border-radius: var(--radius);
-  padding: 40px; text-align: center; background: var(--surface);
+.method-strip { background: var(--cream); padding: 90px max(24px, calc((100vw - 1180px) / 2)); }
+.method-strip .section-heading { margin-bottom: 45px; }
+.method-grid { display: grid; gap: 12px; grid-template-columns: repeat(5, 1fr); }
+.method-step { background: var(--paper); border: 1px solid var(--line); border-radius: 18px; padding: 22px 16px; text-align: center; transition: transform 180ms ease, border-color 180ms ease; }
+.method-step:hover { border-color: var(--sage-light); transform: translateY(-4px); }
+.method-step span { align-items: center; background: var(--sage); border-radius: 50%; color: white; display: flex; font-family: 'Lora', serif; font-size: 15px; height: 34px; justify-content: center; margin: 0 auto 12px; width: 34px; }
+.method-step h3 { color: var(--deep); font-family: 'Lora', serif; font-size: 19px; font-weight: 600; margin: 0; }
+@media (max-width: 760px) {
+  .method-strip { padding: 70px 18px; }
+  .method-grid { grid-template-columns: 1fr 1fr; }
 }
 
-/* FAQ */
-.faq-item {
-  background: var(--surface-2); border: 1px solid var(--border);
-  border-radius: 10px; margin-bottom: 12px; overflow: hidden;
-}
-.faq-item summary {
-  padding: 20px 24px; cursor: pointer; font-family: var(--font-h); font-weight: 600;
-  color: var(--text); list-style: none; display: flex; justify-content: space-between; align-items: center;
-}
-.faq-item summary::-webkit-details-marker { display: none; }
-.faq-item summary::after { content: "+"; color: var(--accent); font-size: 1.5rem; }
-.faq-item[open] summary::after { content: "−"; }
-.faq-item .answer { padding: 0 24px 24px; color: var(--text-muted); }
+.transformation .section-heading { margin-bottom: 55px; }
+.transformation-table { border: 1px solid var(--line); border-radius: 24px; overflow: hidden; }
+.transformation-photo { background: var(--mist); border-radius: 26px; display: grid; grid-template-columns: 1.5fr 0.5fr; margin: 24px 0 0; min-height: 340px; overflow: hidden; }
+.transformation-photo img { height: 100%; object-fit: cover; width: 100%; }
+.transformation-photo figcaption { align-items: flex-start; display: flex; flex-direction: column; font-family: 'Lora', serif; font-size: 20px; justify-content: flex-end; line-height: 1.4; padding: 32px; margin: 0; }
+.transformation-photo figcaption span { color: var(--sage); font-family: var(--font-geist-sans); font-size: 8px; font-weight: 700; letter-spacing: 0.13em; margin-bottom: 12px; text-transform: uppercase; }
+.table-head, .transform-row { display: grid; grid-template-columns: 1fr 1fr; }
+.table-head { background: var(--deep); color: white; font-family: 'Lora', serif; font-size: 17px; }
+.table-head span { padding: 18px 24px; }
+.table-head span:last-child { background: var(--sage); }
+.transform-row { border-bottom: 1px solid var(--line); }
+.transform-row:last-child { border: 0; }
+.transform-row > div { align-items: flex-start; display: flex; gap: 14px; padding: 19px 24px; }
+.transform-row > div:last-child { background: rgba(237,244,241,.7); border-left: 1px solid var(--line); }
+.transform-row p { font-size: 15px; margin: 0; }
+.minus, .check { align-items: center; border-radius: 50%; display: flex; flex: 0 0 23px; font-size: 12px; height: 23px; justify-content: center; }
+.minus { background: #f5eeee; color: #aa777b; }
+.check { background: #d9ebe5; color: var(--forest); }
 
-/* Final CTA */
-.final-cta {
-  background: linear-gradient(180deg, var(--surface) 0%, #F0C468 100%);
-  border-top: 1px solid var(--accent);
+.sessions { background: radial-gradient(circle at 84% 12%, rgba(164,195,185,.19), transparent 27%), var(--deep); color: white; padding: 120px max(24px, calc((100vw - 1080px) / 2)); }
+.light-heading > p:last-child { color: #b4cbc6; font-size: 12px; }
+.session-list { display: grid; gap: 16px; }
+.sessions-body { margin-top: 58px; }
+.sessions-photo { border-radius: 22px; margin: 40px auto 0; max-width: 66%; overflow: hidden; position: relative; }
+.sessions-photo img { display: block; height: auto; width: 100%; }
+.session-card { align-items: start; background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.12); border-radius: 20px; display: grid; gap: 20px; grid-template-columns: 90px 1fr; padding: 26px; transition: background 180ms ease; }
+.session-card:hover { background: rgba(255,255,255,.1); }
+.session-date { color: var(--pink-light); font-family: 'Lora', serif; font-size: 22px; }
+.session-card > div:nth-child(2) > span { color: #a8c4bd; font-size: 8px; letter-spacing: .15em; text-transform: uppercase; }
+.session-card h3 { font-family: 'Lora', serif; font-size: 22px; font-weight: 400; margin: 5px 0 10px; }
+.session-card p { color: #bbcfca; font-size: 14.5px; margin: 0; }
+.session-quote { color: var(--pink-light) !important; font-family: 'Lora', serif; font-size: 18px; font-style: italic; font-weight: 500; line-height: 1.5; margin: 0 0 16px !important; }
+.session-bullets { display: grid; gap: 9px; list-style: none; margin: 0 0 16px; padding: 0; }
+.session-bullets li { color: #c7d8d3; font-size: 14.5px; line-height: 1.65; padding-left: 17px; position: relative; }
+.session-bullets li::before { color: var(--sage); content: "•"; left: 0; position: absolute; }
+.session-result { background: rgba(255,255,255,.1); border-left: 3px solid var(--sage); border-radius: 10px; color: #eef5f2; font-size: 15.5px; font-weight: 500; line-height: 1.6; margin: 0 !important; padding: 14px 18px; }
+.session-result strong { color: var(--pink-light); }
+@media (max-width: 760px) {
+  .sessions-photo { max-width: 100%; }
 }
-.ps-note {
-  margin-top: 48px; padding: 24px; border: 1px dashed var(--accent); border-radius: var(--radius);
-  font-style: italic; color: var(--text); text-align: left;
-}
-.ps-note::before { content: "P.S. "; color: var(--accent-deep); font-weight: 700; }
 
-/* Sticky mobile CTA */
-.sticky-cta {
-  display: none; position: fixed; bottom: 0; left: 0; right: 0; padding: 12px 16px;
-  background: rgba(255, 252, 245, 0.97); backdrop-filter: blur(12px);
-  border-top: 1px solid var(--accent); z-index: 50;
-}
-.sticky-cta a { display: block; text-align: center; }
-@media (max-width: 700px) {
-  .sticky-cta { display: block; }
-  body { padding-bottom: 80px; }
+.results { align-items: start; display: grid; gap: 8vw; grid-template-columns: .82fr 1.18fr; }
+.results-intro { position: sticky; top: 60px; }
+.results-intro > p:not(.kicker) { color: #55706c; font-size: 15.5px; line-height: 1.75; max-width: 440px; }
+.results-intro .button { margin-top: 20px; }
+.result-list { border-top: 1px solid var(--line); }
+.results-detail { min-width: 0; }
+.results-photo { border-radius: 20px; height: 330px; margin: 24px 0 0; overflow: hidden; position: relative; }
+.results-photo::after { background: linear-gradient(to top, rgba(24,59,59,.62), transparent 48%); content: ""; inset: 0; position: absolute; }
+.results-photo img { height: 100%; object-fit: cover; width: 100%; }
+.results-photo figcaption { bottom: 20px; color: white; font-size: 9px; font-weight: 700; left: 22px; letter-spacing: 0.14em; position: absolute; text-transform: uppercase; z-index: 2; margin: 0; }
+.result-row { align-items: center; border-bottom: 1px solid var(--line); display: grid; gap: 20px; grid-template-columns: 45px 1fr 20px; min-height: 100px; }
+.result-row > span:first-child { color: var(--sage); font-family: 'Lora', serif; font-size: 24px; }
+.result-row > span:last-child { color: var(--pink); }
+.result-row p { font-family: 'Lora', serif; font-size: 21px; margin: 0; }
+
+.audience { display: grid; grid-template-columns: 1fr 1fr; }
+.audience-card { padding: 100px max(36px, calc((100vw - 1180px) / 2)); }
+.audience-card:first-child { padding-left: max(36px, calc((100vw - 1180px) / 2)); padding-right: 6vw; }
+.audience-card:last-child { padding-left: 6vw; padding-right: max(36px, calc((100vw - 1180px) / 2)); }
+.yes-card { background: var(--mist); }
+.no-card { background: #f4e8e7; }
+.audience-icon { align-items: center; background: rgba(255,255,255,.6); border-radius: 18px; display: flex; font-family: 'Lora', serif; font-size: 30px; height: 54px; justify-content: center; margin-bottom: 32px; width: 54px; }
+.audience-card h2 { font-size: clamp(2.1rem, 3.2vw, 3.2rem); margin-bottom: 35px; }
+.audience-card ul { display: grid; gap: 15px; list-style: none; margin: 0; padding: 0; }
+.audience-card li { align-items: flex-start; display: flex; font-size: 15px; gap: 11px; }
+.audience-card li span { align-items: center; background: rgba(255,255,255,.7); border-radius: 50%; display: flex; flex: 0 0 23px; height: 23px; justify-content: center; }
+.audience-note { border-top: 1px solid var(--line); font-family: 'Lora', serif; font-size: 17px; line-height: 1.5; margin: 35px 0 0; padding-top: 28px; }
+
+.proof-context { color: #58716d; font-size: 14.5px; line-height: 1.7; margin: 0 auto; max-width: 700px; }
+.story-grid { display: grid; gap: 13px; grid-template-columns: repeat(3, 1fr); margin-top: 55px; }
+.testimonial-card { background: var(--cream); border-radius: 22px; display: flex; flex-direction: column; min-height: 500px; padding: 28px; }
+.testimonial-card:nth-child(2) { background: var(--mist); }
+.testimonial-card:nth-child(3) { background: #f5e8e7; }
+.quote-mark { color: var(--sage); font-family: 'Lora', serif; font-size: 54px; line-height: .8; }
+.testimonial-card > p { color: #47625f; font-size: 14.5px; line-height: 1.75; }
+.result-quote { border-left: 2px solid var(--pink); font-family: 'Lora', serif; font-size: 16px; line-height: 1.5; margin: auto 0 28px; padding-left: 16px; }
+.testimonial-card footer { align-items: center; border-top: 1px solid var(--line); display: flex; gap: 12px; padding-top: 18px; }
+.avatar { align-items: center; background: var(--sage); border-radius: 50%; color: white; display: flex; font-family: 'Lora', serif; height: 42px; justify-content: center; width: 42px; }
+.avatar-2 { background: var(--pink); }
+.avatar-3 { background: var(--deep); }
+.testimonial-card footer p { display: flex; flex-direction: column; margin: 0; }
+.testimonial-card footer strong { font-size: 12px; }
+.testimonial-card footer small { color: #6b7e7b; font-size: 9px; }
+.feedback-strip { display: grid; gap: 10px; grid-template-columns: 1fr 1fr; margin-top: 13px; }
+.feedback-strip p { background: var(--deep); border-radius: 13px; color: white; font-family: 'Lora', serif; font-size: 15.5px; font-style: italic; margin: 0; padding: 16px 20px; }
+.feedback-strip p:nth-child(2), .feedback-strip p:nth-child(3) { background: var(--sage); }
+.proof-closing { font-family: 'Lora', serif; font-size: 21px; line-height: 1.5; margin: 50px auto 0; max-width: 760px; text-align: center; }
+
+.offer { align-items: center; background: radial-gradient(circle at 15% 20%, rgba(255,255,255,.35), transparent 18%), linear-gradient(135deg, #e4ebe6, #d4e3df 55%, #f0d4d3); display: grid; gap: 9vw; grid-template-columns: .9fr 1.1fr; padding: 120px max(24px, calc((100vw - 1100px) / 2)); }
+.offer-copy > p:not(.kicker) { color: #4e6966; font-size: 15.5px; line-height: 1.75; }
+.offer-badge { align-items: center; border-top: 1px solid var(--line); display: flex; gap: 18px; margin-top: 34px; padding-top: 27px; }
+.offer-badge > span { color: var(--deep); font-family: 'Lora', serif; font-size: 42px; }
+.offer-badge p { display: flex; flex-direction: column; font-size: 10px; margin: 0; }
+.offer-badge strong { font-size: 13px; }
+.price-card { background: var(--deep); border: 1px solid rgba(255,255,255,.3); border-radius: 28px; box-shadow: 0 30px 80px rgba(35,71,71,.22); color: white; padding: 32px; }
+.price-list > div { border-bottom: 1px solid rgba(255,255,255,.13); display: grid; gap: 20px; grid-template-columns: 1fr auto; padding: 15px 0; }
+.price-list span { color: #c1d3ce; font-size: 13px; }
+.price-list strong { font-size: 13px; }
+.total-row, .today-price { align-items: center; display: flex; justify-content: space-between; }
+.total-row { color: #bdd0cb; font-size: 11px; margin-top: 18px; }
+.total-row s { font-size: 15px; }
+.today-price { margin: 17px 0; }
+.today-price span { color: var(--pink-light); font-family: 'Lora', serif; font-size: 20px; }
+.today-price strong { color: white; font-family: 'Lora', serif; font-size: 40px; font-weight: 400; }
+.button-light { background: var(--pink); border-color: var(--pink); color: var(--deep); width: 100%; }
+.button-light:hover { background: #f1c2c6; color: var(--deep); }
+.coffee-note { color: #b9cdc8; font-size: 10px; line-height: 1.6; margin: 15px auto; max-width: 360px; text-align: center; }
+.spots { align-items: center; border-top: 1px solid rgba(255,255,255,.13); color: #c8d6d2; display: flex; font-size: 9px; gap: 8px; justify-content: center; padding-top: 15px; }
+
+.guarantee { align-items: center; background: var(--paper); display: grid; gap: 60px; grid-template-columns: 180px 1fr; margin: 0 auto; max-width: 940px; padding: 105px 24px; }
+.guarantee-seal { align-items: center; border: 1px solid var(--sage); border-radius: 50%; display: flex; flex-direction: column; height: 168px; justify-content: center; outline: 1px dashed var(--sage-light); outline-offset: -10px; width: 168px; }
+.guarantee-seal span { font-family: 'Lora', serif; font-size: 40px; }
+.guarantee-seal small { font-size: 9px; letter-spacing: .12em; text-transform: uppercase; }
+.guarantee h2 { font-family: 'Lora', serif; font-size: 32px; font-weight: 400; line-height: 1.2; margin-bottom: 14px; }
+.guarantee p:not(.kicker) { color: #536d69; font-size: 14.5px; line-height: 1.7; }
+
+.faq { display: grid; gap: 8vw; grid-template-columns: .8fr 1.2fr; }
+.faq-intro { position: sticky; top: 60px; }
+.faq-intro > p:not(.kicker) { color: #5b7370; font-size: 14.5px; }
+.faq-intro a { border-bottom: 1px solid var(--sage); font-weight: 650; }
+.faq-list { border-top: 1px solid var(--line); }
+.faq details { border-bottom: 1px solid var(--line); }
+.faq summary { align-items: center; cursor: pointer; display: flex; font-family: 'Lora', serif; font-size: 19px; gap: 20px; justify-content: space-between; list-style: none; padding: 24px 0; }
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary i { border: 1px solid var(--sage); border-radius: 50%; flex: 0 0 28px; height: 28px; position: relative; transition: transform 180ms ease; width: 28px; }
+.faq summary i::before, .faq summary i::after { background: var(--sage); content: ""; height: 1px; left: 8px; position: absolute; top: 13px; width: 10px; }
+.faq summary i::after { transform: rotate(90deg); }
+.faq details[open] summary i { transform: rotate(45deg); }
+.faq details > p { color: #57706c; font-size: 15px; line-height: 1.75; margin: -7px 54px 24px 0; }
+
+.closing { align-items: center; background: linear-gradient(165deg, #edf2ee, #c9d9d6 60%, #edcfd1); display: flex; justify-content: center; min-height: 660px; overflow: hidden; padding: 100px 24px; position: relative; text-align: center; }
+.closing-photo { height: 100%; inset: 0; object-fit: cover; object-position: center; position: absolute; width: 100%; }
+.closing-overlay { background: linear-gradient(rgba(237,244,241,.84), rgba(211,226,222,.77)), linear-gradient(90deg, rgba(247,243,238,.65), transparent); inset: 0; position: absolute; z-index: 1; }
+.closing-content { position: relative; z-index: 4; }
+.closing .kicker { justify-content: center; }
+.closing h2 { font-size: clamp(4rem, 7vw, 6.5rem); line-height: .94; }
+.closing-content > p:not(.kicker) { font-family: 'Lora', serif; font-size: 17px; line-height: 1.7; }
+.closing .button { margin: 20px 0; }
+.closing-content > small { color: #54706b; display: block; font-size: 9px; }
+.closing-sun { background: rgba(233,178,184,.63); border-radius: 50%; height: 460px; left: 50%; position: absolute; top: 65px; transform: translateX(-50%); width: 460px; z-index: 2; }
+.closing-mountain { bottom: -100px; clip-path: polygon(0 100%, 0 80%, 20% 45%, 38% 73%, 57% 28%, 73% 67%, 88% 38%, 100% 68%, 100% 100%); height: 330px; left: 0; position: absolute; width: 100%; z-index: 2; }
+.closing-mountain-one { background: rgba(86,128,120,.24); }
+.closing-mountain-two { background: rgba(51,92,86,.19); transform: translate(14%, 35px) scale(1.15); }
+
+.footer { align-items: center; background: #173d3c; color: white; display: grid; gap: 30px; grid-template-columns: 1fr auto 1fr; padding: 35px max(24px, calc((100vw - 1180px) / 2)); }
+.footer .brand-mark { background: rgba(255,255,255,.13); }
+.footer > p { color: #a8c0bb; font-size: 9px; margin: 0; text-align: center; }
+.footer > div { display: flex; flex-direction: column; font-size: 10px; justify-self: end; text-align: right; }
+
+.mobile-cta { display: none; }
+
+@media (max-width: 1000px) {
+  .site-header nav { display: none; }
+  .hero { padding-top: 120px; }
+  .hero-inner { grid-template-columns: 1fr 0.8fr; }
+  .hero h1 { font-size: 64px; }
+  .hero-visual { transform: scale(.85); transform-origin: center; }
+  .problem-grid { grid-template-columns: 1fr 1fr; }
+  .problem-card { min-height: 175px; }
+  .problem-card > span { margin-bottom: 35px; }
+  .story-section { gap: 6vw; }
+  .manifesto { gap: 7vw; }
+  .manifesto-orb { height: 290px; width: 290px; }
+  .manifesto-orb::after { height: 350px; width: 350px; }
+  .audience-card:first-child, .audience-card:last-child { padding: 80px 5vw; }
 }
 
-footer { padding: 32px 0; background: var(--bg); border-top: 1px solid var(--border); text-align: center; color: var(--text-muted); font-size: 0.875rem; }
+@media (max-width: 760px) {
+  .site-header { height: 70px; padding: 0 18px; }
+  .site-header .header-cta { display: none; }
+  .brand-mark { border-radius: 8px; height: 34px; width: 34px; }
+  .hero { min-height: auto; padding: 110px 18px 70px; }
+  .hero-inner { display: block; }
+  .hero h1 { font-size: clamp(3.4rem, 17vw, 5rem); }
+  .hero-lead { font-size: 15px; }
+  .event-strip { display: grid; gap: 13px; grid-template-columns: 1fr 1fr; }
+  .event-strip span, .event-strip span:first-child { border: 0; padding: 0; }
+  .event-strip span:last-child { grid-column: 1 / -1; }
+  .hero-actions { align-items: stretch; flex-direction: column; }
+  .hero-actions .button { width: 100%; }
+  .hero-visual { height: 470px; margin: 40px -30px 0; transform: scale(.83); }
+  .hero-photo-frame { height: 500px; left: 50%; transform: translateX(-50%); width: 420px; }
+  .energy-card { left: 50%; right: auto; top: 255px; transform: translateX(-40%); }
+  .floating-note { left: 15%; }
+  .hero-foot { display: none; }
+  .section { padding: 85px 18px; }
+  .section-heading h2, .story-copy h2, .manifesto h2, .results-intro h2, .offer h2, .faq h2 { font-size: 3rem; }
+  .problem-grid, .beliefs, .belief-list, .story-section, .manifesto, .results, .audience, .story-grid, .feedback-strip, .offer, .guarantee, .faq { grid-template-columns: 1fr; }
+  .problem-card { min-height: 155px; }
+  .beliefs { gap: 25px; margin-top: 65px; padding-top: 50px; }
+  .belief-list p:last-child { grid-column: auto; }
+  .story-section, .manifesto, .sessions, .offer { padding: 85px 18px; }
+  .story-section { gap: 60px; }
+  .portrait { height: 500px; margin: 0 auto; max-width: 430px; }
+  .story-copy blockquote { font-size: 21px; }
+  .manifesto { gap: 75px; }
+  .manifesto-orb { height: 260px; margin: 0 auto; width: 260px; }
+  .manifesto-orb::after { height: 310px; width: 310px; }
+  .table-head { display: none; }
+  .transform-row { display: block; }
+  .transform-row > div { padding: 17px; }
+  .transform-row > div:first-child::before { color: #9a7779; content: "TRƯỚC"; flex: 0 0 43px; font-size: 8px; font-weight: 700; letter-spacing: .1em; margin-top: 6px; }
+  .transform-row > div:last-child { border-left: 0; border-top: 1px dashed var(--line); }
+  .transform-row > div:last-child::before { color: var(--forest); content: "SAU"; flex: 0 0 43px; font-size: 8px; font-weight: 700; letter-spacing: .1em; margin-top: 6px; }
+  .minus, .check { display: none; }
+  .transformation-photo { grid-template-columns: 1fr; min-height: 0; }
+  .transformation-photo img { height: 245px; }
+  .transformation-photo figcaption { font-size: 18px; padding: 24px; }
+  .sessions-body { margin-top: 42px; }
+  .session-card { grid-template-columns: 1fr; padding: 20px; }
+  .session-date { font-size: 18px; }
+  .results { gap: 55px; }
+  .results-photo { height: 270px; }
+  .results-intro, .faq-intro { position: static; }
+  .audience-card:first-child, .audience-card:last-child { padding: 75px 24px; }
+  .testimonial-card { min-height: 430px; }
+  .offer { gap: 50px; }
+  .price-card { padding: 24px 20px; }
+  .guarantee { gap: 30px; justify-items: center; padding: 85px 24px; text-align: center; }
+  .guarantee .kicker { justify-content: center; }
+  .closing { min-height: 620px; padding: 80px 18px; }
+  .closing h2 { font-size: 4rem; }
+  .closing-sun { height: 330px; top: 120px; width: 330px; }
+  .footer { grid-template-columns: 1fr; justify-items: center; padding-bottom: 108px; text-align: center; }
+  .footer > div { justify-self: center; text-align: center; }
+  .mobile-cta { align-items: center; backdrop-filter: blur(14px); background: rgba(247,243,238,.94); border: 1px solid rgba(255,255,255,.8); border-radius: 18px; bottom: 12px; box-shadow: 0 14px 40px rgba(24,59,59,.2); display: flex; justify-content: space-between; left: 12px; padding: 10px 10px 10px 16px; position: fixed; right: 12px; z-index: 30; }
+  .mobile-cta > div { display: flex; flex-direction: column; }
+  .mobile-cta small { color: #68807c; font-size: 8px; }
+  .mobile-cta strong { font-family: 'Lora', serif; font-size: 18px; }
+  .mobile-cta > a { align-items: center; background: var(--deep); border-radius: 999px; color: white; display: flex; font-size: 12px; font-weight: 700; gap: 18px; padding: 12px 16px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  * { transition: none !important; }
+}
 </style>
 </head>
 <body>
+<main>
 
-<!-- ===================== HERO ===================== -->
-<section class="hero" id="hero">
-  <div class="container text-center">
-    <div class="hero-meta">
-      <span>20:00 - 21:30</span><span>29 - 31/7/2026</span><span>Online qua Zoom</span>
+<header class="site-header">
+  <a class="brand" href="#top" aria-label="Kim Anh Amala — Trang chủ">
+    <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+    <span>
+      <strong>Kim Anh Amala</strong>
+      <small>Energy · Balance · Radiance</small>
+    </span>
+  </a>
+  <nav aria-label="Điều hướng chính">
+    <a href="#hanh-trinh">Hành trình</a>
+    <a href="#noi-dung">Nội dung</a>
+    <a href="#cau-chuyen">Câu chuyện</a>
+    <a href="#faq">FAQ</a>
+  </nav>
+  <a class="header-cta" href="dang-ky.html">Đăng ký ngay <span aria-hidden="true">↗</span></a>
+</header>
+
+<section class="hero" id="top">
+  <div class="mist mist-one"></div>
+  <div class="mist mist-two"></div>
+  <div class="mountain mountain-back"></div>
+  <div class="mountain mountain-front"></div>
+  <div class="hero-inner">
+    <div class="hero-copy">
+      <p class="eyebrow">Workshop 3 buổi online cùng Kim Anh Amala</p>
+      <p style="color: #4e6966; font-size: 13px; font-style: italic; margin: -14px 0 18px;">Dành cho những ai đang trên hành trình yêu &amp; thấu hiểu chính mình, học cách cân bằng từ lối sống.</p>
+      <h1>Từ quên mình đến <em>rạng rỡ tự nhiên</em></h1>
+      <p class="hero-lead">Nhờ "trạm sạc" năng lượng cá nhân — một bản đồ những thực hành đơn giản để bạn có nơi để quay về với chính mình, nuôi dưỡng và tái tạo năng lượng sống.</p>
+      <div class="event-strip" aria-label="Thông tin workshop">
+        <span><small>Thời gian</small>20:00–21:30</span>
+        <span><small>Ngày</small>29–31/7/2026</span>
+        <span><small>Hình thức</small>Online qua Zoom</span>
+      </div>
+      <div class="hero-actions">
+        <a class="button" href="dang-ky.html"><span>Giữ chỗ của tôi — 99.000đ</span><span aria-hidden="true">↗</span></a>
+        <p>Giá trị thực <s>2.000.000đ</s><br><strong>Chỉ 99.000đ đợt này</strong></p>
+      </div>
+      <p class="scarcity"><span></span>Giới hạn 30 chỗ mỗi đợt để đảm bảo không gian thực hành và được Kim Anh hướng dẫn sát.</p>
     </div>
-    <span class="badge">Workshop 3 buổi cùng Kim Anh Amala</span>
-    <h1 class="mt-6">Từ quên mình đến<br><span class="text-accent">rạng rỡ tự nhiên</span><br>nhờ trạm sạc năng lượng cá nhân</h1>
-    <p class="mt-4 text-muted" style="font-size: 1.15rem; max-width: 640px; margin: 0 auto;">
-      Dành cho những ai đang trên hành trình yêu &amp; thấu hiểu chính mình, học cách cân bằng từ lối sống.
-    </p>
-    <div class="mt-8">
-      <a href="dang-ky.html" class="btn-primary">Giữ Chỗ Của Tôi — 99.000đ →</a>
+
+    <div class="hero-visual">
+      <div class="hero-photo-frame">
+        <img src="assets/workshop-thu-gian.jpg" alt="Kim Anh hướng dẫn học viên thư giãn trong không gian thực hành">
+      </div>
+      <div class="energy-card">
+        <div class="card-topline">
+          <span>Trạm sạc của bạn</span>
+          <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+        </div>
+        <p>Rạng rỡ không đến từ tuổi tác, mà từ nguồn sinh lực tràn đầy bên trong - kết quả của việc nuôi dưỡng, mỗi ngày.</p>
+        <div class="energy-meter"><span></span></div>
+      </div>
+      <div class="floating-note">
+        <span class="note-icon">✦</span>
+        <p><small>Một lời nhắc dịu dàng</small>Bạn cũng xứng đáng được chăm sóc.</p>
+      </div>
     </div>
-    <p class="mt-6 text-muted" style="font-size: 0.9rem;">Giá trị thực 2.000.000đ · Chỉ 99.000đ đợt này</p>
+  </div>
+  <div class="hero-foot">
+    <span>Yêu mình</span><span>Hiểu mình</span><span>Nuôi dưỡng</span><span>Cân bằng</span><span>Rạng rỡ</span>
   </div>
 </section>
 
-<!-- ===================== PAIN / PROBLEM ===================== -->
-<section class="section section-alt" id="pain">
-  <div class="container-narrow">
-    <span class="eyebrow">Thực trạng</span>
-    <h2>Bạn có đang thấy mình trong những dòng này?</h2>
-    <div class="pain-list mt-8">
-      <div class="pain-item">Căng thẳng và mệt mỏi kéo dài nhưng không hiểu vì sao.</div>
-      <div class="pain-item">Đã thử nhiều cách để cân bằng cuộc sống nhưng chỉ giải quyết phần ngọn, hoặc chỉ được một thời gian ngắn.</div>
-      <div class="pain-item">Mất niềm tin vào bản thân, luôn thấy mình không đủ tốt.</div>
-      <div class="pain-item">Muốn có sự tươi trẻ cho bản thân, nhưng không biết nên bắt đầu từ đâu.</div>
+<section class="section section-problem" id="hanh-trinh">
+  <div class="section-heading centered">
+    <p class="kicker">Có phải bạn đang ở đây?</p>
+    <h2>Bạn có đang thấy mình<br><em>trong những dòng này?</em></h2>
+  </div>
+  <div class="problem-grid">
+    <article class="problem-card"><span>01</span><p>Căng thẳng và mệt mỏi kéo dài nhưng không hiểu vì sao.</p></article>
+    <article class="problem-card"><span>02</span><p>Đã thử nhiều cách để cân bằng cuộc sống nhưng chỉ giải quyết phần ngọn, hoặc chỉ được một thời gian ngắn.</p></article>
+    <article class="problem-card"><span>03</span><p>Mất niềm tin vào bản thân, luôn thấy mình không đủ tốt.</p></article>
+    <article class="problem-card"><span>04</span><p>Muốn có sự tươi trẻ cho bản thân, nhưng không biết nên bắt đầu từ đâu.</p></article>
+  </div>
+  <div class="beliefs">
+    <div>
+      <p class="kicker">Những niềm tin cũ</p>
+      <h3>Đang âm thầm giữ chân bạn</h3>
     </div>
-    <h3 class="mt-16 text-center">Những niềm tin đang âm thầm giữ chân bạn</h3>
     <div class="belief-list">
-      <div class="belief-item">"Mình chỉ cần cố gắng thêm là sẽ ổn."</div>
-      <div class="belief-item">"Khi hoàn thành trách nhiệm/bổn phận trước, rồi chăm sóc bản thân sau."</div>
-      <div class="belief-item">"Mệt là do tuổi tác hoặc do mình yếu."</div>
-      <div class="belief-item">"Muốn khỏe thì phải có rất nhiều thời gian."</div>
-      <div class="belief-item">"Nếu nghỉ ngơi là ích kỷ."</div>
+      <p>"Mình chỉ cần cố gắng thêm là sẽ ổn."</p>
+      <p>"Khi hoàn thành trách nhiệm trước, rồi chăm sóc bản thân sau."</p>
+      <p>"Mệt là do tuổi tác hoặc do mình yếu."</p>
+      <p>"Muốn khỏe thì phải có rất nhiều thời gian."</p>
+      <p>"Nếu nghỉ ngơi là ích kỷ."</p>
     </div>
   </div>
 </section>
 
-<!-- ===================== FOUNDER STORY ===================== -->
-<section class="section" id="story">
-  <div class="container-narrow">
-    <div class="founder-portrait">
-      <img src="assets/IMG_4533.JPG" alt="Kim Anh Amala">
+<section class="story-section" id="cau-chuyen">
+  <div class="portrait-wrap">
+    <div class="portrait">
+      <img src="assets/kim-anh-amala.jpg" alt="Kim Anh Amala ngồi thiền bên mặt hồ giữa thiên nhiên">
+      <span class="portrait-label">10+ năm học hỏi &amp; thực hành</span>
     </div>
-    <span class="eyebrow text-center" style="display:block; text-align:center;">Câu chuyện của Kim Anh Amala</span>
-    <h2 class="text-center">Mình cũng từng y hệt vậy</h2>
-    <div class="story-narrative mt-8">
-      <p>Mình từng nghĩ chỉ cần cố gắng nhiều hơn là sẽ có được cuộc sống mình mong muốn: tự do, thịnh vượng &amp; trao đi.</p>
-      <p>Mình đặt rất nhiều mục tiêu, học tập, phát triển bản thân và lao theo mà không quan tâm điều gì là phù hợp và ý nghĩa với cuộc đời mình, bỏ quên bản thân thời gian dài, sức khỏe và trạng thái tinh thần lao dốc, đặc biệt là sau những biến động, thay đổi lớn về công việc, mối quan hệ ở tuổi 30.</p>
-      <p class="pull-quote">"Càng muốn nhanh chóng ổn định lại từng thứ, thì càng bất lực trước bao dự định vì chẳng làm được gì, sự tự tin, nhiệt huyết trong mình cũng dần tắt hẳn."</p>
-      <p>Đó là lúc mình nhận ra: Dù là ước mơ, mục tiêu, kế hoạch gì đi nữa thì thứ cần có trong balo ở vạch xuất phát chính là sức khỏe và sự bình an. Không có 2 điều này, từng bước chân mình đi sẽ trở nên khập khiễng.</p>
-      <p>Không tìm cách thoát ra nữa, mình dừng lại, chấp nhận, kiên nhẫn... Mình bắt đầu hệ thống lại hơn 10 năm học hỏi về sức khỏe, yoga, hơi thở, chữa lành và phát triển bản thân.</p>
-      <p>Không phải để học thêm. Mà để tìm ra một hệ thống có thể áp dụng mỗi ngày. Biết lúc nào cần nghỉ, lúc nào cần nạp năng lượng và cách bảo tồn nguồn sinh lực bên trong mình. Đó cũng là thời điểm mình tìm ra <strong>"Bản đồ Thiết kế Trạm Sạc Năng Lượng Cá Nhân"</strong> nuôi dưỡng chính mình.</p>
-      <p>Mình trở lại rạng rỡ, tự tin và sẵn sàng viết tiếp chặng hành trình mới với những giá trị vốn có của bản thân thay vì phụ thuộc vào những tác động, đối tượng bên ngoài mà bỏ quên mình như ngày trước.</p>
-    </div>
-    <div class="founder-banner">
-      <img src="assets/1_DSC0529.jpg" alt="Kim Anh Amala thực hành chuông xoay Himalaya">
-    </div>
-    <div class="text-center mt-16">
-      <a href="dang-ky.html" class="btn-primary">Đăng Ký Workshop — 99.000đ →</a>
-    </div>
+    <p class="signature">Kim Anh Amala</p>
+    <span>Người hướng dẫn &amp; đồng hành</span>
+  </div>
+  <div class="story-copy">
+    <p class="kicker">Câu chuyện của Kim Anh</p>
+    <h2>Mình cũng từng<br><em>y hệt như bạn.</em></h2>
+    <p>Mình từng nghĩ chỉ cần cố gắng nhiều hơn là sẽ có được cuộc sống mình mong muốn: tự do, thịnh vượng và trao đi. Mình đặt rất nhiều mục tiêu, học tập, phát triển bản thân và lao theo mà không quan tâm điều gì thật sự phù hợp, ý nghĩa với cuộc đời mình.</p>
+    <p>Sau những biến động lớn về công việc và mối quan hệ ở tuổi 30, sức khỏe và tinh thần mình lao dốc. Càng muốn nhanh chóng ổn định lại mọi thứ, mình càng bất lực trước bao dự định; sự tự tin và nhiệt huyết cũng dần tắt hẳn. Mình nhận ra:</p>
+    <blockquote>"Dù là ước mơ hay kế hoạch gì, thứ cần có trong balo ở vạch xuất phát chính là sức khỏe và sự bình an."</blockquote>
+    <p>Không tìm cách thoát ra nữa, mình dừng lại, chấp nhận, kiên nhẫn và hệ thống hơn 10 năm học hỏi về sức khỏe, yoga, hơi thở, chữa lành và phát triển bản thân. Không phải để học thêm — mà để tìm ra một hệ thống có thể áp dụng mỗi ngày: biết lúc nào cần nghỉ, lúc nào cần nạp và cách bảo tồn nguồn sinh lực.</p>
+    <p>Đó là lúc "Bản đồ Thiết kế Trạm Sạc Năng Lượng Cá Nhân" ra đời với những thực hành của sự nuôi dưỡng, cách bảo toàn năng lượng từ bên trong và niềm tin rằng mình hoàn toàn xứng đáng được yêu thương và chăm sóc. Mình trở lại rạng rỡ, tự tin và sẵn sàng viết tiếp hành trình bằng những giá trị vốn có của bản thân, thay vì phụ thuộc vào bên ngoài mà bỏ quên chính mình.</p>
+    <a class="button" href="dang-ky.html"><span>Đăng ký workshop — 99.000đ</span><span aria-hidden="true">↗</span></a>
   </div>
 </section>
 
-<!-- ===================== VẺ TƯƠI TRẺ / MÔ TẢ WORKSHOP ===================== -->
-<section class="section section-alt">
-  <div class="container-narrow">
-    <span class="eyebrow">Về workshop</span>
-    <h2>Vẻ tươi trẻ, rạng rỡ không phải đích đến cần chinh phục</h2>
-    <div class="workshop-photo mt-8">
-      <img src="assets/IMG_1563.JPG" alt="Kim Anh Amala thiền định">
-    </div>
-    <div class="story-narrative">
-      <p>Mà là kết quả tất yếu khi bạn tin mình xứng đáng và biết cách nuôi dưỡng và ý thức bảo toàn năng lượng từ bên trong.</p>
-      <p>Vì chỉ khi bạn THỰC SỰ tin mình xứng đáng với sự rạng rỡ mỗi ngày bằng việc yêu thương chính mình trọn vẹn thì mỗi thực hành bạn làm mới thật sự bền bỉ và có ý nghĩa. Nếu trong sâu thẳm làm vì sợ, vì để được công nhận, thì rất khó có sự hài lòng vì luôn không thấy đủ.</p>
-      <p>Phụ nữ hiện đại biết rất nhiều phương pháp chăm sóc bản thân nhưng vẫn kiệt sức, không phải vì bạn thất bại hay thiếu cố gắng, chỉ là bạn đang sử dụng nguồn năng lượng dự trữ quá lâu mà chưa biết cách nạp lại và chưa có một hệ thống phù hợp với chính mình.</p>
-      <p class="pull-quote">Và điều tuyệt vời là....<br>Bạn hoàn toàn có thể bắt đầu lại bằng bản đồ thiết kế "trạm sạc" năng lượng riêng cho mình từ những thực hành đơn giản trong lối sống.</p>
-      <p>Trong 3 ngày workshop, chúng ta sẽ cùng nhận diện <strong>7 nguồn năng lượng đang âm thầm làm thất thoát sinh lực</strong> và bản đồ thiết kế trạm sạc năng lượng cá nhân, nuôi dưỡng &amp; cân bằng từ trong lối sống.</p>
-    </div>
+<section class="manifesto">
+  <div class="manifesto-portrait">
+    <img src="assets/Ch%C3%A2n%20dung%20%C3%A1o%20tr%E1%BA%AFng.JPG" alt="Kim Anh Amala chân dung áo trắng">
+  </div>
+  <div>
+    <p class="kicker">Về workshop</p>
+    <h2>Vẻ tươi trẻ, rạng rỡ<br><em>không phải đích đến cần chinh phục.</em></h2>
+    <p class="large-copy">Mà là kết quả tất yếu khi bạn tin mình xứng đáng, biết cách nuôi dưỡng và có ý thức bảo toàn năng lượng từ bên trong.</p>
+    <p>Phụ nữ hiện đại biết rất nhiều phương pháp chăm sóc bản thân nhưng vẫn kiệt sức — không phải vì bạn thất bại hay thiếu cố gắng. Chỉ là bạn đã sử dụng nguồn năng lượng dự trữ quá lâu mà chưa biết cách nạp lại, chưa có một hệ thống phù hợp với chính mình.</p>
+    <p>Điều tuyệt vời là bạn hoàn toàn có thể bắt đầu lại bằng bản đồ thiết kế "trạm sạc" năng lượng riêng, từ những thực hành đơn giản trong lối sống. Trong 3 ngày, chúng ta sẽ nhận diện 7 nguồn năng lượng đang âm thầm làm thất thoát sinh lực và cùng xây bản đồ nuôi dưỡng, cân bằng từ bên trong.</p>
   </div>
 </section>
 
-<!-- ===================== TRƯỚC / SAU WORKSHOP ===================== -->
-<section class="section" id="transformation">
-  <div class="container-narrow">
-    <span class="eyebrow text-center" style="display:block; text-align:center;">Sự thay đổi</span>
-    <h2 class="text-center">Trước và sau workshop</h2>
-    <div class="contrast-grid mt-16">
-      <div class="contrast-col contrast-no">
-        <h3>Trước workshop</h3>
-        <ul>
-          <li>Hay mệt, dễ cạn năng lượng, không còn đủ năng lượng làm những điều mình thích</li>
-          <li>Đặt bản thân là ưu tiên sau cùng, kiệt sức, bất ổn trong mối quan hệ</li>
-          <li>Đã thử nhiều cách chăm sóc bản thân nhưng chỉ được một thời gian ngắn</li>
-          <li>Mất niềm tin, hoài nghi bản thân, luôn thấy mình không đủ tốt</li>
-          <li>Muốn nuôi dưỡng sự tươi trẻ, dồi dào năng lượng sống nhưng chưa biết bắt đầu từ đâu</li>
-        </ul>
-      </div>
-      <div class="contrast-col contrast-yes">
-        <h3>Sau workshop</h3>
-        <ul>
-          <li>Hiểu nguyên nhân gốc rễ âm thầm rút cạn sinh lực</li>
-          <li>Chủ động, cân bằng giữa thời gian chăm mình &amp; chăm cho những người mình yêu thương</li>
-          <li>Có bản đồ trạm sạc năng lượng cá nhân, biết chính xác điều cần làm mỗi ngày</li>
-          <li>Tin mình xứng đáng với sự rạng rỡ, không còn chăm sóc bản thân vì sợ hay để được công nhận</li>
-          <li>Hiểu được cơ chế tăng - hao hụt nguồn sinh lực (prana) bên trong cơ thể</li>
-        </ul>
-      </div>
-    </div>
+<section class="method-strip">
+  <div class="section-heading centered">
+    <p class="kicker">Phương pháp</p>
+    <h2 style="font-family: 'Lora', serif; font-weight: 400; font-size: clamp(1.8rem, 3vw, 2.4rem); margin-bottom: 0;">5 trụ cột của bản đồ thiết kế trạm sạc năng lượng cá nhân</h2>
+  </div>
+  <div class="method-grid">
+    <div class="method-step"><span>1</span><h3>Nhận diện (Cạn)</h3></div>
+    <div class="method-step"><span>2</span><h3>Kết nối (Cắm)</h3></div>
+    <div class="method-step"><span>3</span><h3>Nuôi dưỡng (Sạc)</h3></div>
+    <div class="method-step"><span>4</span><h3>Tái tạo (Đầy)</h3></div>
+    <div class="method-step"><span>5</span><h3>Kiến tạo (Trạm)</h3></div>
   </div>
 </section>
 
-<!-- ===================== CURRICULUM 3 BUỔI ===================== -->
-<section class="section section-alt" id="curriculum">
-  <div class="container">
-    <span class="eyebrow text-center" style="display:block; text-align:center;">Nội dung từng buổi</span>
-    <h2 class="text-center">3 buổi workshop</h2>
-    <div class="founder-banner mt-8">
-      <img src="assets/FB_IMG_1733673837093.jpg" alt="Buổi thực hành ngoài trời cùng học viên">
+<section class="section transformation">
+  <div class="section-heading">
+    <p class="kicker">Sự thay đổi</p>
+    <h2>Trước và sau <em>workshop</em></h2>
+  </div>
+  <div class="transformation-table">
+    <div class="table-head"><span>Trước workshop</span><span>Sau workshop</span></div>
+    <div class="transform-row">
+      <div><span class="minus">−</span><p>Hay mệt, dễ cạn năng lượng, không còn đủ sức làm những điều mình thích</p></div>
+      <div><span class="check">✓</span><p>Hiểu nguyên nhân gốc rễ âm thầm rút cạn sinh lực</p></div>
     </div>
-    <div class="grid-3 mt-16">
-      <div class="session">
-        <div class="session-num">1</div>
-        <h3>Bản chất của vẻ tươi trẻ</h3>
-        <p class="session-date mt-4">20:00 - 21:30</p>
-        <p>Hiểu bản chất của vẻ tươi trẻ &amp; câu chuyện "xây trạm sạc" bắt nguồn từ đâu.</p>
-      </div>
-      <div class="session">
-        <div class="session-num">2</div>
-        <h3>Bản đồ trạm sạc</h3>
-        <p class="session-date mt-4">20:00 - 21:30</p>
-        <p>Bản đồ để thiết kế một trạm sạc năng lượng cá nhân của riêng bạn.</p>
-      </div>
-      <div class="session">
-        <div class="session-num">3</div>
-        <h3>7 nguồn năng lượng rò rỉ</h3>
-        <p class="session-date mt-4">20:00 - 21:30</p>
-        <p>Khám phá 7 nguồn năng lượng rò rỉ âm thầm rút cạn sinh lực của bạn.</p>
-      </div>
+    <div class="transform-row">
+      <div><span class="minus">−</span><p>Đặt bản thân là ưu tiên sau cùng, kiệt sức và bất ổn trong mối quan hệ</p></div>
+      <div><span class="check">✓</span><p>Chủ động cân bằng thời gian chăm mình và chăm những người mình yêu thương</p></div>
+    </div>
+    <div class="transform-row">
+      <div><span class="minus">−</span><p>Muốn nuôi dưỡng sự tươi trẻ nhưng chưa biết bắt đầu từ đâu</p></div>
+      <div><span class="check">✓</span><p>Hiểu nguyên lý của tăng - giảm sinh lực và chọn ra điều phù hợp với bản thân</p></div>
+    </div>
+    <div class="transform-row">
+      <div><span class="minus">−</span><p>Mất niềm tin, hoài nghi bản thân, luôn thấy mình không đủ tốt</p></div>
+      <div><span class="check">✓</span><p>Tin mình xứng đáng với sự rạng rỡ, tươi trẻ thay vì chờ sự công nhận từ bên ngoài</p></div>
+    </div>
+    <div class="transform-row">
+      <div><span class="minus">−</span><p>Đã thử nhiều cách chăm sóc bản thân nhưng chỉ được một thời gian ngắn</p></div>
+      <div><span class="check">✓</span><p>Có bản đồ trạm sạc cá nhân, biết chính xác điều cần làm mỗi ngày</p></div>
     </div>
   </div>
+  <figure class="transformation-photo">
+    <img src="assets/IMG_4688.JPG" alt="Trở về với nhịp thở">
+    <figcaption>Một không gian an toàn để trở về với nhịp thở và cơ thể.</figcaption>
+  </figure>
 </section>
 
-<!-- ===================== KẾT QUẢ & QUÀ TẶNG ===================== -->
-<section class="section" id="result">
-  <div class="container">
-    <span class="eyebrow text-center" style="display:block; text-align:center;">Kết quả &amp; quà tặng</span>
-    <h2 class="text-center">Bạn nhận được gì từ workshop này?</h2>
-    <div class="grid-2 mt-16">
-      <div class="bonus-card">
-        <div class="icon">🗺️</div>
-        <h3>Bản đồ thiết kế Trạm Sạc Cá Nhân</h3>
-      </div>
-      <div class="bonus-card">
-        <div class="icon">🎯</div>
-        <h3>Xác định 2-3 nguồn làm cạn năng lượng lớn nhất của mình</h3>
-      </div>
-    </div>
-    <div class="grid-3 mt-8">
-      <div class="bonus-card">
-        <div class="icon">🎁</div>
-        <h3>Bản đồ 20 nguồn rò rỉ năng lượng phổ biến</h3>
-      </div>
-      <div class="bonus-card">
-        <div class="icon">🌅</div>
-        <h3>Nghi thức 10 phút mỗi sáng</h3>
-      </div>
-      <div class="bonus-card">
-        <div class="icon">🌙</div>
-        <h3>Nghi thức phục hồi buổi tối</h3>
-      </div>
-    </div>
-    <div class="text-center mt-16">
-      <a href="dang-ky.html" class="btn-primary">Đăng Ký Workshop — 99.000đ →</a>
-    </div>
+<section class="sessions" id="noi-dung">
+  <div class="section-heading centered light-heading">
+    <p class="kicker">Nội dung từng buổi</p>
+    <h2>3 buổi để trở về<br><em>với nguồn năng lượng của bạn</em></h2>
+    <p>Mỗi buổi 20:00–21:30 · Online trực tiếp qua Zoom</p>
   </div>
-</section>
-
-<!-- ===================== AUDIENCE FIT ===================== -->
-<section class="section section-alt" id="audience">
-  <div class="container-narrow">
-    <span class="eyebrow">Dành cho ai</span>
-    <h2>Workshop này dành cho phụ nữ 27–45 tuổi đang cảm thấy</h2>
-    <div class="audience-list mt-8">
-      <div class="audience-item">Dễ mệt mỏi, dễ cạn năng lượng mà không hiểu vì sao.</div>
-      <div class="audience-item">Tự mang quá nhiều trách nhiệm, bổn phận mà bỏ rơi, quên mất chính mình.</div>
-      <div class="audience-item">Muốn chăm sóc, nuôi dưỡng sự tươi trẻ cho bản thân, nhưng không biết nên bắt đầu từ đâu.</div>
-      <div class="audience-item">Đã biết nhiều phương pháp, nhưng không đưa được chúng vào lối sống.</div>
-    </div>
-    <p class="mt-8 text-center" style="font-style: italic;">Workshop này không dạy bạn cố gắng thêm. Mà giúp bạn hiểu điều gì đang thầm lặng rút cạn sinh lực và bắt đầu nuôi dưỡng lại sự tươi trẻ từ bên trong, theo cách phù hợp với chính cuộc sống của bạn.</p>
-    <h3 class="mt-16 text-center">Workshop này chưa dành cho bạn nếu</h3>
-    <div class="audience-list mt-8">
-      <div class="audience-item no">Đang tìm kiếm một khóa học lý thuyết để nghe rồi để đó — không có ý định thực hành.</div>
-      <div class="audience-item no">Muốn có kết quả ngay lập tức mà không sẵn sàng dành thời gian nhìn lại bản thân.</div>
-      <div class="audience-item no">Chưa sẵn sàng thành thật với chính mình để nhìn vào bên trong.</div>
-    </div>
-  </div>
-</section>
-
-<!-- ===================== TESTIMONIAL / CASE STUDY ===================== -->
-<section class="section" id="testimonial">
-  <div class="container">
-    <span class="eyebrow text-center" style="display:block; text-align:center;">Câu chuyện thật</span>
-    <h2 class="text-center">Kết quả từ những người đã đồng hành</h2>
-    <div class="testimonial-grid mt-16">
-      <div class="testimonial-card">
-        <div class="testimonial-who">
-          <div class="avatar-placeholder">C</div>
-          <div class="testimonial-name">Chị H.</div>
-          <div class="testimonial-role">Mẹ của một em bé đặc biệt</div>
-        </div>
+  <div class="sessions-body">
+    <div class="session-list">
+      <article class="session-card">
+        <div class="session-date">29.07</div>
         <div>
-          <p>Chị là mẹ của một em bé đặc biệt, luôn cố gắng chu toàn mọi thứ đến mức cơ thể bắt đầu lên tiếng, mỗi sáng thức dậy cơ thể đau nhức, vùng vai cổ gồng cứng, tính khí chị cũng dễ nóng giận.</p>
-          <p class="mt-4">Chị tham gia khóa đồng hành 1:1 và xúc động nhận ra trước giờ mình đã không "lắng nghe những phản hồi của cơ thể", chỉ ngăn chặn chúng bằng thuốc, bằng ý chí chứ không xem đó là báo hiệu để chăm - dưỡng lại cho mình.</p>
-          <p class="mt-4">Chị bắt đầu tự "sạc" cho mình mỗi ngày, sức bền tăng, tinh thần thoải mái hơn, chị đủ sức để đồng hành cùng con tốt hơn.</p>
+          <span>Buổi 01</span>
+          <h3>Điều gì thật sự nuôi dưỡng bạn?</h3>
+          <p class="session-quote">"Vì sao bạn nghỉ ngơi rất nhiều mà vẫn không thấy tươi mới, rạng rỡ?"</p>
+          <ul class="session-bullets">
+            <li>Sự khác biệt giữa "nghỉ ngơi" và "thư giãn thật sự"</li>
+            <li>Một cách nhìn về căng thẳng giúp bạn không cần chống lại nó nữa — vì càng chống, năng lượng càng rò rỉ nhanh hơn</li>
+            <li>Niềm tin âm thầm khiến bạn quên mình, luôn đặt bản thân là ưu tiên cuối</li>
+            <li>Vì sao bảo tồn sinh lực, không phải ăn uống hay tập luyện, mới là bước đầu tiên của sự tươi trẻ tự nhiên</li>
+          </ul>
+          <p class="session-result"><strong>Kết quả:</strong> Nhìn ra niềm tin, thói quen đang âm thầm rút cạn năng lượng của bạn và điểm cần thay đổi đầu tiên.</p>
         </div>
-      </div>
-      <div class="testimonial-card">
-        <div class="testimonial-who">
-          <div class="avatar-placeholder">B</div>
-          <div class="testimonial-name">Chị B.</div>
-          <div class="testimonial-role">Chủ cửa hàng</div>
-        </div>
+      </article>
+      <article class="session-card">
+        <div class="session-date">30.07</div>
         <div>
-          <p>Là bà chủ cửa hàng, nghiêm khắc, quyết đoán, muốn mọi thứ trong tầm kiểm soát. Hơn 10 năm tập yoga, thiền nhưng chỉ làm theo chứ không hiểu nguyên lý, đến khi phổi bị tổn thương mới buộc phải dừng lại chăm sóc bản thân. Sau khóa 1:1 "xây trạm sạc cho chính mình", bà nhận ra bao năm biết nhiều nhưng chưa từng hiểu nguyên lý đằng sau.</p>
-          <p class="mt-4">Bà bắt đầu học cách thả lỏng, mở lòng đón nhận, bớt nóng giận, chủ động mang những thực hành vào đời sống đều đặn, tự nhận thấy mình đang yêu bản thân mỗi ngày và hài lòng với những gì đang có.</p>
+          <span>Buổi 02</span>
+          <h3>Bản đồ thiết kế trạm sạc năng lượng cá nhân</h3>
+          <p class="session-quote">"Làm sao thiết kế một hệ thống chăm sóc bản thân phù hợp với chính mình, mà không cần thêm ý chí để duy trì?"</p>
+          <ul class="session-bullets">
+            <li>"Trạm sạc năng lượng" không giới hạn không gian mà là "sạc" bất cứ khi nào cần</li>
+            <li>Điều gì còn thiếu khiến bạn dù đã biết rất nhiều phương pháp chăm sóc nhưng vẫn mắc kẹt</li>
+            <li>PRANA — nguồn sinh lực và những yếu tố âm thầm nâng - kéo năng lượng bạn mỗi ngày</li>
+            <li>Cách thiết kế nên Trạm Sạc Cá Nhân của riêng bạn</li>
+          </ul>
+          <p class="session-result"><strong>Kết quả:</strong> Có trong tay bản đồ và nguyên lý thiết kế Trạm Sạc Cá Nhân — nền tảng của sự tươi trẻ, rạng rỡ tự nhiên.</p>
         </div>
-      </div>
-      <div class="testimonial-card">
-        <div class="testimonial-who">
-          <div class="avatar-placeholder">29</div>
-          <div class="testimonial-name">Bạn T.</div>
-          <div class="testimonial-role">29 tuổi</div>
-        </div>
+      </article>
+      <article class="session-card">
+        <div class="session-date">31.07</div>
         <div>
-          <p>Cô gái 29 tuổi, đang khủng hoảng trước ngưỡng 30 — công việc, các mối quan hệ đều biến động, sức khỏe cũng suy dần: thiếu máu, khí huyết không thông, thần sắc kém. Kinh khủng nhất là mỗi kỳ kinh nguyệt, đau đến mức chỉ nằm một chỗ, không làm được gì.</p>
-          <p class="mt-4">Sau khóa 1:1 đồng hành "thiết kế trạm sạc cho mình", bạn chia sẻ rằng "em xinh đẹp hẳn ra". Không còn quặn đau ngày đến kỳ, khí huyết thông trở lại, tự tin hơn hẳn, sẵn sàng vẽ tiếp định hướng cho công việc và cuộc sống sắp tới.</p>
+          <span>Buổi 03</span>
+          <h3>Bản đồ 7 nguồn rò rỉ năng lượng</h3>
+          <p class="session-quote">"Bạn không yếu, cũng không thất bại — bạn chỉ đang sống bằng năng lượng dự trữ quá lâu. Vậy nó đang rò rỉ từ đâu?"</p>
+          <ul class="session-bullets">
+            <li>Dấu hiệu bên ngoài cho thấy cơ thể đang cạn kiệt — và chúng xuất hiện rất lâu trước khi bạn kịp gọi tên là "kiệt sức"</li>
+            <li>7 nguồn rò rỉ âm thầm tiêu hao năng lượng sống mỗi ngày</li>
+            <li>Tự đánh giá mức độ ảnh hưởng của từng nguồn rò rỉ lên chính bạn</li>
+            <li>Khoảng dừng 5 phút ngắt cả chuỗi căng thẳng trước khi nó cộng dồn thành kiệt sức</li>
+          </ul>
+          <p class="session-result"><strong>Kết quả:</strong> Xác định 2–3 nguồn rò rỉ lớn nhất của chính mình và bước đầu chuyển hóa.</p>
         </div>
-      </div>
+      </article>
     </div>
-    <p class="text-center mt-16" style="font-weight: 600; color: var(--accent-deep);">Và những phản hồi khác...</p>
-    <div class="grid-3 mt-8">
-      <div class="feedback-quote">"Lần đầu tiên mình ngủ được giấc trưa — sau nhiều năm."</div>
-      <div class="feedback-quote">"Mình học cách tự ôm ấp vỗ về chính mình khi biết lắng nghe cơ thể."</div>
-      <div class="feedback-quote">"Bớt dần kiểu phản ứng nhanh — giờ biết dừng lại trước khi nói."</div>
-      <div class="feedback-quote">"Ứng dụng hơi thở ngay khi tức giận với chồng — và nó thật sự hiệu quả."</div>
-    </div>
-    <div class="text-center mt-16">
-      <a href="dang-ky.html" class="btn-primary">Đăng Ký Workshop — 99.000đ →</a>
-    </div>
+    <figure class="sessions-photo">
+      <img src="assets/3%20bu%E1%BB%95i%20workshop.jpg" alt="3 buổi workshop cùng Kim Anh Amala">
+    </figure>
   </div>
 </section>
 
-<!-- ===================== OFFER BOX ===================== -->
-<section class="section" id="offer">
-  <div class="container-narrow">
-    <div class="offer-box">
-      <span class="badge">Ưu đãi đợt này</span>
-      <h2 class="mt-6">Workshop Đánh Thức Vẻ Rạng Rỡ Tự Nhiên</h2>
-      <div class="offer-price">
-        <span class="strike">2.000.000đ</span>
-        <span class="main">99.000đ</span>
-      </div>
-      <ul class="offer-list">
-        <li>3 buổi Workshop live 90 phút cùng Kim Anh Amala, Q&amp;A trực tiếp</li>
-        <li>Bản đồ 20 nguồn rò rỉ năng lượng phổ biến</li>
-        <li>Nghi thức 10 phút mỗi sáng</li>
-        <li>Nghi thức phục hồi buổi tối</li>
-        <li>Record đầy đủ trong 24 giờ sau mỗi buổi</li>
-      </ul>
-      <a href="dang-ky.html" class="btn-primary" style="font-size: 1.15rem;">Giữ Chỗ Của Tôi — 99.000đ →</a>
-      <p class="mt-6 text-muted" style="font-size: 0.9rem;">Tương đương 1-2 ly cafe. Nhưng là một hệ thống chăm sóc năng lượng cho cả hành trình phía trước.</p>
+<section class="section results">
+  <div class="results-intro">
+    <p class="kicker">Kết quả &amp; quà tặng</p>
+    <h2>Bạn mang gì về<br><em>sau workshop?</em></h2>
+    <p>Không chỉ là cảm hứng nhất thời, mà là những công cụ cụ thể để bạn tiếp tục nuôi dưỡng năng lượng trong đời sống hằng ngày.</p>
+    <a class="button" href="dang-ky.html"><span>Nhận trọn bộ — 99.000đ</span><span aria-hidden="true">↗</span></a>
+  </div>
+  <div class="results-detail">
+    <div class="result-list">
+      <div class="result-row"><span>01</span><p>Bản đồ thiết kế Trạm Sạc Cá Nhân</p><span aria-hidden="true">✦</span></div>
+      <div class="result-row"><span>02</span><p>Xác định 2–3 nguồn làm cạn năng lượng lớn nhất</p><span aria-hidden="true">✦</span></div>
+      <div class="result-row"><span>03</span><p>Bản đồ 20 nguồn rò rỉ năng lượng phổ biến</p><span aria-hidden="true">✦</span></div>
+      <div class="result-row"><span>04</span><p>Nghi thức 10 phút mỗi sáng</p><span aria-hidden="true">✦</span></div>
+      <div class="result-row"><span>05</span><p>Nghi thức phục hồi buổi tối</p><span aria-hidden="true">✦</span></div>
     </div>
+    <figure class="results-photo">
+      <img src="assets/sound-healing.jpg" alt="Kim Anh dẫn dắt một buổi thư giãn với chuông xoay giữa thiên nhiên">
+      <figcaption>Nuôi dưỡng · Phục hồi · Cân bằng</figcaption>
+    </figure>
   </div>
 </section>
 
-<!-- ===================== GUARANTEE ===================== -->
-<section class="section section-alt" id="guarantee">
-  <div class="container-narrow text-center">
-    <div class="guarantee-box">
-      <span class="badge">Cam kết "Giá Trị Thật Hoặc Hoàn Tiền"</span>
-      <h2 class="mt-6">Hoàn tiền 100% trong 24h nếu không thấy giá trị</h2>
-      <p class="mt-4">Nếu sau khi tham gia trọn vẹn workshop bạn thấy không nhận được giá trị, nhắn Kim Anh trong vòng 24 giờ. Kim Anh sẽ hoàn tiền 100% mà không cần lý do.</p>
-    </div>
+<section class="section proof">
+  <div class="section-heading centered">
+    <p class="kicker">Câu chuyện thật</p>
+    <h2>Điều xảy ra khi bạn<br><em>đi sâu hơn cùng Kim Anh</em></h2>
+    <p class="proof-context">Những câu chuyện dưới đây đến từ hành trình đồng hành 1:1 — nơi học viên áp dụng sâu và đều đặn cùng Kim Anh. Workshop 3 buổi là bước đầu tiên trong chính hệ thống đã tạo ra những thay đổi ấy.</p>
+  </div>
+  <div class="story-grid">
+    <article class="testimonial-card">
+      <span class="quote-mark">"</span>
+      <p>Luôn cố gắng chu toàn mọi thứ đến mức cơ thể bắt đầu lên tiếng: mỗi sáng đau nhức, vai cổ gồng cứng và dễ nóng giận. Khi đi sâu trong hành trình 1:1, chị xúc động nhận ra trước giờ mình đã không "lắng nghe những phản hồi của cơ thể", chịu đựng, phớt lờ bằng ý chí chứ không xem đó là báo hiệu để chăm - dưỡng lại cho mình.</p>
+      <div class="result-quote">Chị bắt đầu tự "sạc" mỗi ngày, sức bền tăng, tinh thần thoải mái hơn và đủ sức đồng hành cùng con tốt hơn.</div>
+      <footer>
+        <span class="avatar avatar-1">A</span>
+        <p><strong>Chị T.A (40 tuổi)</strong><small>Mẹ của một em bé đặc biệt</small></p>
+      </footer>
+    </article>
+    <article class="testimonial-card">
+      <span class="quote-mark">"</span>
+      <p>Hơn 10 năm tập yoga, thiền nhưng chỉ làm theo mà chưa hiểu nguyên lý. Đến khi phổi bị tổn thương, cô buộc phải dừng lại và chăm sóc bản thân. Hành trình 1:1 giúp cô thấy rõ khoảng cách giữa "biết nhiều" và thật sự nuôi dưỡng mình.</p>
+      <div class="result-quote">Cô học lại cách thả lỏng, mở lòng đón nhận, bớt nóng giận, chủ động nuôi dưỡng "trạm sạc" từ lối sống, tự nhận thấy mình đang yêu bản thân mỗi ngày và hài lòng với những gì đang có.</div>
+      <footer>
+        <span class="avatar avatar-2">C</span>
+        <p><strong>Cô K.C (65 tuổi)</strong><small>Chủ cửa hàng</small></p>
+      </footer>
+    </article>
+    <article class="testimonial-card">
+      <span class="quote-mark">"</span>
+      <p>Khủng hoảng trước ngưỡng 30, công việc và các mối quan hệ cùng biến động. Sức khỏe suy dần, khí huyết kém, mỗi kỳ kinh nguyệt đau đến mức không thể làm gì.</p>
+      <div class="result-quote">Sau hành trình 1:1, bạn chia sẻ "em xinh đẹp hẳn ra": cơ thể dễ chịu hơn, tự tin và sẵn sàng vẽ tiếp định hướng công việc, cuộc sống.</div>
+      <footer>
+        <span class="avatar avatar-3">V</span>
+        <p><strong>Bạn T.V</strong><small>29 tuổi</small></p>
+      </footer>
+    </article>
+  </div>
+  <p style="color: var(--forest); font-family: 'Lora', serif; font-size: 15px; font-style: italic; margin: 30px auto 0; text-align: center;">Và những phản hồi khác…</p>
+  <div class="feedback-strip">
+    <p>"Lần đầu tiên mình ngủ được giấc trưa — sau nhiều năm."</p>
+    <p>"Mình học cách tự ôm ấp, vỗ về chính mình khi biết lắng nghe cơ thể."</p>
+    <p>"Bớt phản ứng nhanh — giờ biết dừng lại trước khi nói."</p>
+    <p>"Ứng dụng hơi thở ngay khi tức giận với chồng — và nó thật sự hiệu quả."</p>
+  </div>
+  <p class="proof-closing">Bạn sẽ bắt đầu từ đâu phụ thuộc vào mức độ bạn sẵn sàng đi sâu. Nhưng mọi hành trình đều bắt đầu bằng bước đầu tiên: <strong>hiểu đúng 7 nguồn năng lượng đang rút cạn bạn.</strong></p>
+</section>
+
+<section class="audience">
+  <div class="audience-card yes-card">
+    <div class="audience-icon">♡</div>
+    <p class="kicker">Workshop dành cho</p>
+    <h2>Workshop này dành cho bạn nếu…</h2>
+    <ul>
+      <li><span>✓</span>Dễ mệt mỏi, dễ cạn năng lượng mà không hiểu vì sao.</li>
+      <li><span>✓</span>Tự mang quá nhiều trách nhiệm, bổn phận mà bỏ rơi, quên mất chính mình.</li>
+      <li><span>✓</span>Muốn chăm sóc, nuôi dưỡng sự tươi trẻ nhưng chưa biết nên bắt đầu từ đâu.</li>
+      <li><span>✓</span>Đã biết nhiều phương pháp, nhưng chưa đưa được chúng vào lối sống.</li>
+    </ul>
+    <p class="audience-note">Workshop không dạy bạn cố gắng thêm. Workshop giúp bạn hiểu điều gì đang thầm lặng rút cạn sinh lực và bắt đầu nuôi dưỡng lại sự tươi trẻ từ bên trong.</p>
+  </div>
+  <div class="audience-card no-card">
+    <div class="audience-icon">○</div>
+    <p class="kicker">Workshop chưa dành cho bạn nếu</p>
+    <h2>Bạn chưa sẵn sàng thực sự bước vào bên trong</h2>
+    <ul>
+      <li><span>×</span>Đang tìm một khóa học lý thuyết để nghe rồi để đó — không có ý định thực hành.</li>
+      <li><span>×</span>Muốn kết quả ngay lập tức nhưng không sẵn sàng dành thời gian nhìn lại bản thân.</li>
+      <li><span>×</span>Chưa sẵn sàng thành thật với chính mình để nhìn vào bên trong.</li>
+    </ul>
   </div>
 </section>
 
-<!-- ===================== FAQ ===================== -->
-<section class="section" id="faq">
-  <div class="container-narrow">
-    <span class="eyebrow text-center" style="display:block; text-align:center;">Câu hỏi thường gặp</span>
-    <h2 class="text-center">Câu hỏi thường gặp</h2>
-    <div class="mt-12">
-      <details class="faq-item">
-        <summary>Tôi không biết gì về yoga hay breathwork có tham gia được không?</summary>
-        <div class="answer">Hoàn toàn được. Workshop không yêu cầu bất kỳ kiến thức nền nào, chỉ cần sẵn sàng thành thật với bản thân.</div>
-      </details>
-      <details class="faq-item">
-        <summary>Có record không nếu tôi bỏ lỡ một buổi?</summary>
-        <div class="answer">Có record trong 24 giờ sau mỗi buổi. Tuy nhiên tham gia trực tiếp sẽ nhận được nhiều hơn vì có phần thực hành và chia sẻ nhóm.</div>
-      </details>
-      <details class="faq-item">
-        <summary>Sau workshop này tôi có thể đi tiếp như thế nào?</summary>
-        <div class="answer">Ngày 3, Kim Anh sẽ giới thiệu lộ trình 90 ngày chuyên sâu dành cho ai muốn được đồng hành sâu hơn.</div>
-      </details>
-      <details class="faq-item">
-        <summary>Workshop này khác gì với các khóa yoga thông thường?</summary>
-        <div class="answer">Không dạy tư thế. Không dạy kỹ thuật. Tập trung hoàn toàn vào việc giúp bạn hiểu bản thân và xây hệ thống chăm sóc phù hợp với chính cuộc sống của mình.</div>
-      </details>
-      <details class="faq-item">
-        <summary>Tôi bận gia đình buổi tối thì có theo được không?</summary>
-        <div class="answer">Có. Workshop được thiết kế trong khung 90 phút mỗi buổi, có workbook đi kèm để bạn thực hành tập trung, không cần chuẩn bị phức tạp.</div>
-      </details>
-      <details class="faq-item">
-        <summary>Vì sao workshop chỉ 99k? Có phải sau đó sẽ bị bán thêm không?</summary>
-        <div class="answer">99k là mức phí khởi đầu để bạn trải nghiệm phương pháp và tự đánh giá mức độ phù hợp. Ở buổi cuối, bạn sẽ được giới thiệu lộ trình chuyên sâu nếu muốn tiếp tục đồng hành, nhưng việc tham gia là hoàn toàn chủ động.</div>
-      </details>
+<section class="offer" id="dang-ky">
+  <div class="offer-copy">
+    <p class="kicker">Ưu đãi đợt này</p>
+    <h2>Đánh thức<br><em>Vẻ Rạng Rỡ Tự Nhiên</em></h2>
+    <p>Ba buổi thực hành trực tiếp, một bản đồ rõ ràng và những nghi thức nhỏ để bạn bắt đầu chăm sóc năng lượng ngay trong nhịp sống hiện tại.</p>
+    <div class="offer-badge">
+      <span>29–31</span>
+      <p><strong>Tháng 7, 2026</strong>20:00–21:30 · Zoom</p>
     </div>
+  </div>
+  <div class="price-card">
+    <div class="price-list">
+      <div><span>3 buổi workshop live 90 phút cùng Kim Anh Amala, Q&amp;A trực tiếp</span><strong>1.200.000đ</strong></div>
+      <div><span>Bản đồ 20 nguồn rò rỉ năng lượng phổ biến</span><strong>300.000đ</strong></div>
+      <div><span>Nghi thức 10 phút mỗi sáng + nghi thức phục hồi buổi tối</span><strong>200.000đ</strong></div>
+      <div><span>Record đầy đủ trong 24 giờ sau mỗi buổi</span><strong>300.000đ</strong></div>
+    </div>
+    <div class="total-row"><span>Tổng giá trị</span><s>2.000.000đ</s></div>
+    <div class="today-price"><span>Giá hôm nay</span><strong>99.000đ</strong></div>
+    <a class="button button-light" href="dang-ky.html"><span>Giữ chỗ của tôi — 99.000đ</span><span aria-hidden="true">↗</span></a>
+    <p class="coffee-note">Tương đương 1–2 ly cà phê. Nhưng là một hệ thống chăm sóc năng lượng cho cả hành trình phía trước.</p>
+    <div class="spots"><span></span>Giới hạn 30 chỗ để giữ chất lượng thực hành và hướng dẫn.</div>
   </div>
 </section>
 
-<!-- ===================== FINAL CTA ===================== -->
-<section class="section final-cta" id="final-cta">
-  <div class="container-narrow text-center">
-    <h2>Dừng lại. Nhìn thật. Chọn bản thân.</h2>
-    <p class="mt-8">Bằng việc xây cho mình "một trạm sạc - nuôi dưỡng sự tươi trẻ mỗi ngày". Workshop giới hạn số lượng để đảm bảo bạn có không gian thực hành và được hướng dẫn sát hơn.</p>
-    <div class="mt-12">
-      <a href="dang-ky.html" class="btn-primary">Giữ Chỗ Của Tôi — 99.000đ →</a>
-      <p class="mt-6 text-accent">Đăng ký sớm để nhận link tham gia &amp; những phần quà trong chương trình</p>
-    </div>
-    <div class="ps-note">
-      Bạn không cần phải hoàn hảo. Bạn không cần phải "sẵn sàng". Bạn chỉ cần xuất hiện, và Kim Anh sẽ đồng hành cùng bạn trong từng bước.
-    </div>
+<section class="guarantee">
+  <div class="guarantee-seal"><span>100%</span><small>Hoàn tiền</small></div>
+  <div>
+    <p class="kicker">Cam kết "Giá trị thật hoặc hoàn tiền"</p>
+    <h2>Hoàn tiền 100% trong 24h nếu bạn không thấy giá trị</h2>
+    <p>Nếu sau khi tham gia trọn vẹn workshop bạn thấy mình không nhận được giá trị, hãy nhắn Kim Anh trong vòng 24 giờ. Kim Anh sẽ hoàn tiền 100% mà không cần lý do.</p>
   </div>
 </section>
 
-<!-- ===================== FOOTER ===================== -->
-<footer>
-  <div class="container">
-    <p>© 2026 Kim Anh Amala. All rights reserved.</p>
-    <p class="mt-4">Liên hệ: anhkim1212sld@gmail.com · 0839196171</p>
+<section class="section faq" id="faq">
+  <div class="faq-intro">
+    <p class="kicker">Bạn đang băn khoăn?</p>
+    <h2>Câu hỏi<br><em>thường gặp</em></h2>
+    <p>Nếu bạn vẫn còn câu hỏi, hãy nhắn trực tiếp cho Kim Anh qua <a href="tel:+84839196171">0839 196 171</a>.</p>
+  </div>
+  <div class="faq-list">
+    <details open>
+      <summary><span>Tôi không biết gì về yoga hay breathwork có tham gia được không?</span><i aria-hidden="true"></i></summary>
+      <p>Hoàn toàn được. Workshop không yêu cầu bất kỳ kiến thức nền nào, chỉ cần bạn sẵn sàng thành thật với bản thân.</p>
+    </details>
+    <details>
+      <summary><span>Có record không nếu tôi bỏ lỡ một buổi?</span><i aria-hidden="true"></i></summary>
+      <p>Có record trong 24 giờ sau mỗi buổi. Tuy nhiên, tham gia trực tiếp sẽ nhận được nhiều hơn vì có phần thực hành và chia sẻ nhóm.</p>
+    </details>
+    <details>
+      <summary><span>Sau workshop này tôi có thể đi tiếp như thế nào?</span><i aria-hidden="true"></i></summary>
+      <p>Ngày 3, Kim Anh sẽ giới thiệu lộ trình 90 ngày chuyên sâu dành cho ai muốn được đồng hành sâu hơn.</p>
+    </details>
+    <details>
+      <summary><span>Workshop này khác gì với các khóa yoga thông thường?</span><i aria-hidden="true"></i></summary>
+      <p>Workshop không dạy tư thế hay đặt trọng tâm vào kỹ thuật. Bạn sẽ hiểu bản thân và xây một hệ thống chăm sóc phù hợp với chính cuộc sống của mình.</p>
+    </details>
+    <details>
+      <summary><span>Tôi bận gia đình buổi tối thì có theo được không?</span><i aria-hidden="true"></i></summary>
+      <p>Có. Workshop được thiết kế trong khung 90 phút mỗi buổi, có tài liệu đi kèm để bạn thực hành tập trung và không cần chuẩn bị phức tạp.</p>
+    </details>
+    <details>
+      <summary><span>Vì sao workshop chỉ 99k?</span><i aria-hidden="true"></i></summary>
+      <p>99k là mức phí khởi đầu để bạn trải nghiệm phương pháp và tự đánh giá độ phù hợp. Ở buổi cuối, bạn sẽ được giới thiệu lộ trình chuyên sâu nếu muốn tiếp tục; việc tham gia hoàn toàn chủ động.</p>
+    </details>
+  </div>
+</section>
+
+<section class="closing">
+  <img class="closing-photo" src="assets/thuc-hanh-ben-ho.jpg" alt="Kim Anh và học viên thiền bên mặt hồ trong ánh sáng thiên nhiên">
+  <div class="closing-overlay"></div>
+  <div class="closing-sun"></div>
+  <div class="closing-mountain closing-mountain-one"></div>
+  <div class="closing-mountain closing-mountain-two"></div>
+  <div class="closing-content">
+    <p class="kicker">Lời mời dành cho bạn</p>
+    <h2>Dừng lại. Nhìn thật.<br><em>Chọn bản thân.</em></h2>
+    <p>Bạn không cần phải hoàn hảo. Bạn không cần phải "sẵn sàng".<br>Bạn chỉ cần xuất hiện, và Kim Anh sẽ đồng hành cùng bạn trong từng bước.</p>
+    <a class="button" href="dang-ky.html"><span>Giữ chỗ của tôi — 99.000đ</span><span aria-hidden="true">↗</span></a>
+    <small>Đăng ký sớm để nhận link tham gia và những phần quà trong chương trình.</small>
+  </div>
+</section>
+
+<footer class="footer">
+  <a class="brand" href="#top" aria-label="Về đầu trang">
+    <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+    <span><strong>Kim Anh Amala</strong><small>Energy · Balance · Radiance</small></span>
+  </a>
+  <p>© 2026 Kim Anh Amala.<br>All rights reserved.</p>
+  <div>
+    <a href="mailto:anhkim1212sld@gmail.com">anhkim1212sld@gmail.com</a>
+    <a href="tel:+84839196171">0839 196 171</a>
   </div>
 </footer>
 
-<div class="sticky-cta">
-  <a href="dang-ky.html" class="btn-primary">Giữ Chỗ — 99.000đ →</a>
+<div class="mobile-cta">
+  <div><small>Workshop 29–31/7</small><strong>99.000đ</strong></div>
+  <a href="dang-ky.html">Giữ chỗ <span aria-hidden="true">↗</span></a>
 </div>
 
+</main>
 </body>
 </html>
