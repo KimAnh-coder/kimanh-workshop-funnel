@@ -6,20 +6,38 @@
 <title>Kim Anh Amala — Đăng ký</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lora:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;650;700&family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
 <style>
+  :root {
+    --ink: #183b3b; --deep: #234747; --forest: #37685f; --sage: #6f9c8f; --sage-light: #b8d1ca;
+    --mist: #edf4f1; --cream: #f7f3ee; --paper: #fffdf9; --pink: #e9b2b8; --pink-light: #f4d8d8;
+    --line: rgba(24, 59, 59, 0.14);
+  }
   * { box-sizing: border-box; margin: 0; padding: 0; }
-  body { font-family: 'Inter', system-ui, sans-serif; background: #FFFCF5; color: #3D2F1F; line-height: 1.6; padding: 40px 20px; }
-  .container { max-width: 480px; margin: 0 auto; background: #FFF9EC; padding: 32px; border-radius: 14px; box-shadow: 0 4px 16px rgba(184,134,11,0.12); border: 1px solid rgba(184,134,11,0.18); }
-  h1 { font-family: 'Lora', serif; font-size: 24px; margin-bottom: 8px; color: #3D2F1F; }
-  .lead { color: #8A7A63; margin-bottom: 24px; font-size: 14px; }
-  label { display: block; font-size: 13px; font-weight: 600; margin: 12px 0 6px; color: #3D2F1F; }
-  input, select { width: 100%; padding: 12px; border: 1px solid rgba(184,134,11,0.3); border-radius: 8px; font-size: 15px; font-family: inherit; background: #FFFCF5; color: #3D2F1F; }
-  input:focus, select:focus { outline: none; border-color: #B8860B; }
-  .cta { width: 100%; background: linear-gradient(135deg, #B8860B 0%, #8C6508 100%); color: #FFFCF2; padding: 14px; font-size: 16px; font-weight: 700; font-family: 'Lora', serif; border: none; border-radius: 8px; cursor: pointer; margin-top: 20px; }
-  .cta:hover { opacity: 0.92; }
-  .cta:disabled { background: #C9BBA0; cursor: not-allowed; }
-  .error { color: #A85C5C; font-size: 13px; margin-top: 8px; display: none; }
+  body {
+    font-family: 'Plus Jakarta Sans', Arial, sans-serif; background: var(--mist); color: var(--ink);
+    line-height: 1.6; padding: 40px 20px; -webkit-font-smoothing: antialiased;
+  }
+  .container {
+    max-width: 480px; margin: 0 auto; background: var(--paper); padding: 36px 32px; border-radius: 26px;
+    box-shadow: 0 20px 60px rgba(24,59,59,.12); border: 1px solid var(--line);
+  }
+  h1 { font-family: 'Lora', serif; font-weight: 500; font-size: 25px; line-height: 1.2; margin-bottom: 10px; color: var(--ink); }
+  .lead { color: #5b7370; margin-bottom: 26px; font-size: 14px; }
+  label { display: block; font-size: 13px; font-weight: 600; margin: 14px 0 6px; color: var(--ink); }
+  input, select {
+    width: 100%; padding: 13px 14px; border: 1px solid var(--line); border-radius: 12px; font-size: 15px;
+    font-family: inherit; background: var(--mist); color: var(--ink);
+  }
+  input:focus, select:focus { outline: none; border-color: var(--sage); }
+  .cta {
+    width: 100%; align-items: center; background: var(--deep); border: 1px solid var(--deep); color: #fff;
+    padding: 16px; font-size: 15px; font-weight: 700; font-family: 'Plus Jakarta Sans', sans-serif;
+    border-radius: 999px; cursor: pointer; margin-top: 22px; transition: background 180ms ease, transform 180ms ease;
+  }
+  .cta:hover { background: #143938; transform: translateY(-1px); }
+  .cta:disabled { background: var(--sage-light); border-color: var(--sage-light); cursor: not-allowed; transform: none; }
+  .error { color: #a85c3c; font-size: 13px; margin-top: 10px; display: none; }
 </style>
 </head>
 <body>
