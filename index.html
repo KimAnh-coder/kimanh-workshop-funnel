@@ -159,6 +159,7 @@ em { color: var(--sage); font-weight: 400; }
 .floating-note p { font-family: 'Lora', serif; font-size: 13px; line-height: 1.25; margin: 0; }
 .floating-note small { color: #bcd3cc; display: block; font-family: var(--font-geist-sans); font-size: 7px; letter-spacing: 0.08em; margin-bottom: 3px; text-transform: uppercase; }
 .note-icon { align-items: center; background: var(--pink-light); border-radius: 12px; color: var(--deep); display: flex; flex: 0 0 40px; height: 40px; justify-content: center; }
+.floating-note-mobile { display: none; }
 .mist { background: rgba(255,255,255,.45); border-radius: 50%; filter: blur(34px); position: absolute; }
 .mist-one { height: 210px; right: 3%; top: 15%; width: 390px; }
 .mist-two { bottom: 6%; height: 160px; left: 4%; width: 520px; }
@@ -420,6 +421,13 @@ em { color: var(--sage); font-weight: 400; }
   .hero-photo-frame { height: 500px; left: 50%; transform: translateX(-50%); width: 420px; }
   .energy-card { left: 50%; right: auto; top: 210px; transform: translateX(-50%); }
   .floating-note { display: none; }
+  .floating-note-mobile {
+    align-items: center; background: var(--deep); border: 1px solid rgba(255,255,255,.14);
+    border-radius: 18px; box-shadow: 0 14px 40px rgba(28,60,58,.2); color: white; display: flex;
+    gap: 12px; margin: 24px auto 0; max-width: 340px; padding: 15px;
+  }
+  .floating-note-mobile p { font-family: 'Lora', serif; font-size: 13px; line-height: 1.25; margin: 0; }
+  .floating-note-mobile small { color: #bcd3cc; display: block; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 7px; letter-spacing: 0.08em; margin-bottom: 3px; text-transform: uppercase; }
   .hero-foot { display: none; }
   .section { padding: 85px 18px; }
   .section-heading h2, .story-copy h2, .manifesto h2, .results-intro h2, .offer h2, .faq h2 { font-size: 3rem; }
@@ -533,6 +541,10 @@ em { color: var(--sage); font-weight: 400; }
         <span class="note-icon">✦</span>
         <p><small>Một lời nhắc dịu dàng</small>Bạn cũng xứng đáng được chăm sóc.</p>
       </div>
+    </div>
+    <div class="floating-note-mobile">
+      <span class="note-icon">✦</span>
+      <p><small>Một lời nhắc dịu dàng</small>Bạn cũng xứng đáng được chăm sóc.</p>
     </div>
   </div>
   <div class="hero-foot">
