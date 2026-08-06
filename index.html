@@ -27,6 +27,20 @@ src="https://www.facebook.com/tr?id=2363667477795261&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
 
+<script>
+(function captureUTM() {
+  var params = new URLSearchParams(window.location.search);
+  var keys = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term'];
+  var utm = {};
+  var has = false;
+  keys.forEach(function(k) {
+    var v = params.get(k);
+    if (v) { utm[k] = v; has = true; }
+  });
+  if (has) sessionStorage.setItem('utm', JSON.stringify(utm));
+})();
+</script>
+
 <meta property="og:title" content="Đánh Thức Vẻ Rạng Rỡ Tự Nhiên">
 <meta property="og:description" content="3 buổi cùng Kim Anh Amala để hiểu đúng nguồn năng lượng đang rút cạn bạn và bắt đầu nuôi dưỡng lại từ bên trong.">
 <meta property="og:image" content="assets/og.jpg">

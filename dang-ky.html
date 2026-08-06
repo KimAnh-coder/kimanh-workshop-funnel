@@ -23,6 +23,20 @@ src="https://www.facebook.com/tr?id=2363667477795261&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
 
+<script>
+(function captureUTM() {
+  var params = new URLSearchParams(window.location.search);
+  var keys = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term'];
+  var utm = {};
+  var has = false;
+  keys.forEach(function(k) {
+    var v = params.get(k);
+    if (v) { utm[k] = v; has = true; }
+  });
+  if (has) sessionStorage.setItem('utm', JSON.stringify(utm));
+})();
+</script>
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;650;700&family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
@@ -99,6 +113,7 @@ src="https://www.facebook.com/tr?id=2363667477795261&ev=PageView&noscript=1"
     btn.textContent = 'Đang xử lý...';
 
     const form = new FormData(e.target);
+    const utm = JSON.parse(sessionStorage.getItem('utm') || '{}');
     const data = {
       name: form.get('name'),
       phone: form.get('phone'),
@@ -106,7 +121,12 @@ src="https://www.facebook.com/tr?id=2363667477795261&ev=PageView&noscript=1"
       goal: form.get('goal'),
       bump1: false,
       bump2: false,
-      totalAmount: 99000
+      totalAmount: 99000,
+      utm_source: utm.utm_source || '',
+      utm_medium: utm.utm_medium || '',
+      utm_campaign: utm.utm_campaign || '',
+      utm_content: utm.utm_content || '',
+      utm_term: utm.utm_term || ''
     };
 
     try {
